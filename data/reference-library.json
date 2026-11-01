@@ -1,0 +1,541 @@
+[
+  {
+    "id": "shanghai-enterprise",
+    "name": "上海律协 · 企业法律顾问 AI 操作指引",
+    "group": "China",
+    "publisher": "协会",
+    "author": "上海市律师协会",
+    "kind": "指南 / Prompt",
+    "tasks": [
+      "非诉",
+      "诉讼",
+      "合规"
+    ],
+    "summary": "面向企业顾问的变量式提示词示例，涵盖合同审查、事实梳理与日常咨询。",
+    "url": "https://www.lawyers.org.cn/new/common-detail?id=49835e6e3485429ba83efcc34fec0618",
+    "evidence": "https://www.lawyers.org.cn/new/common-detail?id=49835e6e3485429ba83efcc34fec0618",
+    "identity": "协会组织编制；2026-07-07业务研究指导委员会通过。",
+    "published": "2026-08-04",
+    "updated": null,
+    "license": "原站有转载条件；本目录只索引",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [
+      "法条",
+      "司法解释",
+      "案例"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "按示例准备脱敏材料与AI工具",
+    "keywords": "合同审查 争议焦点 证据 时间线 用工 compliance contract review",
+    "access": "原站阅读"
+  },
+  {
+    "id": "shanghai-community",
+    "name": "上海律协 · 居村法律顾问 AI 指引",
+    "group": "China",
+    "publisher": "协会",
+    "author": "上海市律师协会",
+    "kind": "指南 / Prompt",
+    "tasks": [
+      "非诉",
+      "诉讼"
+    ],
+    "summary": "社区法律咨询、普法和法律文书的操作示例。2025版试行指引。",
+    "url": "https://info.lawyers.org.cn/info/71624f5df3184a90941f317aca231c18",
+    "evidence": "https://info.lawyers.org.cn/info/71624f5df3184a90941f317aca231c18",
+    "identity": "协会指引，列有撰稿律师及支持委员会。",
+    "published": "2025-08-13",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "普法 法律咨询 起诉状 执行申请",
+    "access": "原站阅读"
+  },
+  {
+    "id": "shuanglaw",
+    "name": "爽律 ShuangLaw",
+    "group": "China",
+    "publisher": "专业律师",
+    "author": "蔡诗爽 / zj-ai-lab",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "合规"
+    ],
+    "summary": "刑事、民商事、合同与尽调工作流，配有文书质量检查方法。",
+    "url": "https://github.com/zj-ai-lab/shuanglv-legal-skills",
+    "evidence": "https://www.lawzj.cn/claprod_view.aspx?fid=t28%3A81%3A28&id=486&typeid=81",
+    "identity": "卓建官网可核对律师身份；深圳律协材料列数字经济专业委员会任职。",
+    "published": null,
+    "updated": "2026-08-20",
+    "license": "ShuangLaw Professional Use License 1.0",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "刑事辩护 尽职调查 合同审查 争议焦点",
+    "access": "原站获取",
+    "created": "2026-08-15",
+    "licenseUrl": "https://github.com/zj-ai-lab/shuanglv-legal-skills/blob/main/LICENSE",
+    "licenseNote": "允许律师、律所内部使用；收费软件或技能市场集成需书面授权。"
+  },
+  {
+    "id": "senry-prompts",
+    "name": "中文法律 Prompt 库",
+    "group": "China",
+    "publisher": "个人",
+    "author": "SenryLee",
+    "kind": "Prompt",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "涉外",
+      "合规"
+    ],
+    "summary": "按诉讼与非诉业务整理的提示词库，可用作法律任务指令的起点。",
+    "url": "https://github.com/SenryLee/legal-prompts",
+    "evidence": "https://github.com/SenryLee/legal-prompts",
+    "identity": "个人项目；未找到明确执业身份或所在律所证据。",
+    "published": null,
+    "updated": "2026-07-22",
+    "license": "MIT",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [
+      "法条",
+      "案例"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "支持文字输入的AI工具；检索任务另配法源",
+    "keywords": "合同审查 劳动争议 尽职调查 数据合规 国际贸易 争议焦点",
+    "access": "仓库快照",
+    "created": "2026-02-27",
+    "mirror": "China/senry-prompts"
+  },
+  {
+    "id": "haolvshi",
+    "name": "好律狮法律技能包",
+    "group": "China",
+    "publisher": "厂商",
+    "author": "律品汇科技（北京）有限公司",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "通过服务接口处理咨询、赔偿计算、合同审核与诉讼文书。",
+    "url": "https://github.com/mtcto/haolvshi-legal-skill",
+    "evidence": "https://github.com/mtcto/haolvshi-legal-skill/blob/main/LICENSE",
+    "identity": "许可证列明公司权利人；未见逐技能负责律师名单。",
+    "published": null,
+    "updated": "2026-09-20",
+    "license": "MIT No Attribution",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "Node ≥20；好律狮远端服务及其登录、收费条件",
+    "keywords": "合同审查 起诉状 答辩状 赔偿计算",
+    "access": "原站获取",
+    "created": "2026-09-01"
+  },
+  {
+    "id": "xiang-law",
+    "name": "Law · 中国法律检索与材料处理",
+    "group": "China",
+    "publisher": "个人",
+    "author": "XimilalaXiang",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "将法条与案例 API 检索、证据缺口分析和 Word 文书导出串联。",
+    "url": "https://github.com/XimilalaXiang/Law",
+    "evidence": "https://github.com/XimilalaXiang/Law/blob/master/README.md",
+    "identity": "个人仓库；本轮未核实法律执业背景。",
+    "published": null,
+    "updated": "2026-04-19",
+    "license": "README称MIT；根目录未见LICENSE，暂不镜像",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [
+      "法条",
+      "案例"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "Python ≥3.9；法律API凭据；文书处理依赖",
+    "keywords": "类案检索 证据 争议焦点 起诉状 合同审查",
+    "access": "原站获取",
+    "created": "2026-04-12"
+  },
+  {
+    "id": "dri-ramos",
+    "name": "DRI · Civil Defense Prompting Guide",
+    "group": "US",
+    "publisher": "协会",
+    "author": "DRI / Frank Ramos",
+    "kind": "指南 / Prompt",
+    "tasks": [
+      "诉讼"
+    ],
+    "summary": "美国民事被告代理的提示词与试用方法，涉及证据开示、动议和书面提交。",
+    "url": "https://www.dri.org/docs/default-source/center-law-public-policy/2026-ai-seminar/center-ai-prompting.pdf?sfvrsn=4739d618_6",
+    "evidence": "https://www.goldbergsegalla.com/news-and-knowledge/news/goldberg-segalla-expands-miami-presence-with-the-addition-of-attorney-frank-ramos/",
+    "identity": "Frank Ramos为Goldberg Segalla合伙人，律所介绍其26年以上民事诉讼经历。",
+    "published": "2026-03-10",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [
+      "案例"
+    ],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "civil defense litigation discovery motion drafting deposition",
+    "access": "原站阅读"
+  },
+  {
+    "id": "writelaw",
+    "name": "Write.law Prompt Library",
+    "group": "US",
+    "publisher": "法律教师",
+    "author": "Joe Regalia / Write.law",
+    "kind": "Prompt",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "英文法律写作、摘要、改写与论证组织的专业提示库。",
+    "url": "https://write.law/ailibrary",
+    "evidence": "https://law.unlv.edu/faculty/joseph-regalia",
+    "identity": "UNLV法学教授；高校履历列法院书记员与多家律所执业经历。",
+    "published": null,
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "legal memo brief drafting legal writing plain English",
+    "access": "付费原站"
+  },
+  {
+    "id": "law-librarians",
+    "name": "AI Law Librarians Prompt Library",
+    "group": "US",
+    "publisher": "法律教师",
+    "author": "Rebecca Fordon 等法律图书馆工作者",
+    "kind": "Prompt",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "面向法律研究、教学与起草的社区提示词目录。",
+    "url": "https://www.ailawlibrarians.com/prompt-library/",
+    "evidence": "https://www.ailawlibrarians.com/about-us/",
+    "identity": "团队列多所法学院图书馆与法律教育岗位；社区投稿的作者分别核对。",
+    "published": "2024-09-23",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [
+      "法条",
+      "案例"
+    ],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "legal research case law research teaching law librarian",
+    "access": "原站阅读"
+  },
+  {
+    "id": "cocounsel",
+    "name": "CoCounsel Prompt Library",
+    "group": "US",
+    "publisher": "厂商",
+    "author": "Thomson Reuters / Practical Law律师编辑",
+    "kind": "产品工作流",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "合规"
+    ],
+    "summary": "商业平台内的律师编辑提示库，支持收藏、分组和团队使用管理。",
+    "url": "https://legal.thomsonreuters.com/en/legal/criminal-law",
+    "evidence": "https://legal.thomsonreuters.com/en/legal/criminal-law",
+    "identity": "官方明确说明预置提示词由Practical Law律师编辑创建。",
+    "published": null,
+    "updated": "2026-10-14",
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [
+      "法条",
+      "案例"
+    ],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "legal research contract review Practical Law Westlaw",
+    "access": "商业服务"
+  },
+  {
+    "id": "harvey-mtd",
+    "name": "Harvey × Lexis · Motion to Dismiss",
+    "group": "US",
+    "publisher": "厂商",
+    "author": "Harvey / LexisNexis",
+    "kind": "产品工作流",
+    "tasks": [
+      "诉讼"
+    ],
+    "summary": "从起诉书分析、策略确认到法律检索和驳回动议起草的流程说明。",
+    "url": "https://www.harvey.ai/blog/motion-to-dismiss-workflow-lexisnexis",
+    "evidence": "https://www.harvey.ai/blog/motion-to-dismiss-workflow-lexisnexis",
+    "identity": "厂商联合公告；列明Lexis法源与Shepard’s。",
+    "published": "2026-10-07",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [
+      "法条",
+      "案例"
+    ],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "motion to dismiss complaint defense litigation",
+    "access": "商业服务"
+  },
+  {
+    "id": "anytime",
+    "name": "Anytime AI Prompt Library",
+    "group": "US",
+    "publisher": "厂商",
+    "author": "Anytime AI",
+    "kind": "产品工作流",
+    "tasks": [
+      "诉讼"
+    ],
+    "summary": "面向美国原告律师团队，把成功问答保存并共享为提示库。",
+    "url": "https://www.anytimeai.ai/resources/blog/anytime-ai-unveils-prompt-library-to-boost-collaboration-and-efficiency",
+    "evidence": "https://www.anytimeai.ai/resources/blog/anytime-ai-unveils-prompt-library-to-boost-collaboration-and-efficiency",
+    "identity": "厂商公告；未列单条Prompt负责律师。",
+    "published": "2024-10-10",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "普通法系"
+    ],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "plaintiff litigation prompt library",
+    "access": "商业服务"
+  },
+  {
+    "id": "legalon-prompts",
+    "name": "LegalOn · In-house Legal Prompt Guide",
+    "group": "US",
+    "publisher": "厂商",
+    "author": "LegalOn / Eileen Policarpio",
+    "kind": "指南 / Prompt",
+    "tasks": [
+      "非诉",
+      "合规"
+    ],
+    "summary": "企业法务的英文提示词示例，涉及合同审查、需求受理和事项管理。",
+    "url": "https://www.legalontech.com/post/chatgpt-prompts-for-lawyers",
+    "evidence": "https://www.legalontech.com/post/chatgpt-prompts-for-lawyers",
+    "identity": "作者职务为传播经理；原文称与法律工程团队共同整理。",
+    "published": null,
+    "updated": "2026-06-23",
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "英文企业法务方法；具体法域按任务设置"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "in house counsel NDA contract review legal intake board policy",
+    "access": "原站阅读"
+  },
+  {
+    "id": "lawve",
+    "name": "Lawve · Awesome Legal Skills",
+    "group": "Others",
+    "publisher": "个人",
+    "author": "Lawve 社区及各原作者",
+    "kind": "Skill 目录",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "涉外",
+      "合规"
+    ],
+    "summary": "跨法域技能聚合目录。逐项追溯原作者、适用法与许可证。",
+    "url": "https://github.com/lawve-ai/awesome-legal-skills",
+    "evidence": "https://lawve.ai/about",
+    "identity": "社区平台称进行发布前审查；条目作者背景分别核对。",
+    "published": null,
+    "updated": "2026-10-19",
+    "license": "根目录CC BY-NC-ND 4.0；单项另核",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "多法域，逐项确认"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "international cross border sanctions trade arbitration 跨境 国际贸易 涉外",
+    "access": "原站获取",
+    "created": "2025-12-18"
+  },
+  {
+    "id": "lexis-canada",
+    "name": "Lexis+ AI · Canada Prompt Library",
+    "group": "Others",
+    "publisher": "厂商",
+    "author": "LexisNexis Canada",
+    "kind": "产品工作流",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "加拿大版提示库发布说明，作为加拿大法律工作入口单独收录。",
+    "url": "https://www.lexisnexis.com/blogs/en-ca/b/canadian-product-spotlight/posts/new-release-lexis-plus-ai-prompt-library",
+    "evidence": "https://www.lexisnexis.com/blogs/en-ca/b/canadian-product-spotlight/posts/new-release-lexis-plus-ai-prompt-library",
+    "identity": "LexisNexis加拿大产品官方公告。",
+    "published": "2025-05-12",
+    "updated": null,
+    "license": "未见开放再分发许可",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "混合法系"
+    ],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "加拿大；具体省份另核"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "Canada legal research prompt library Canadian law",
+    "access": "商业服务"
+  }
+]

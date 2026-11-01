@@ -20,11 +20,30 @@ class Parser(HTMLParser):
         if tag=='h1':self.h1+=1
 def main():
     data=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
+    audit=json.loads((ROOT/'data/import-audit.json').read_text(encoding='utf-8'))
+    evidence={x['id']:x for x in json.loads((ROOT/'data/source-evidence.json').read_text(encoding='utf-8'))}
+    byid={x['id']:x for x in data}
+    assert len(data)==audit['total']==300
+    assert sum(x['kind']=='Skill' for x in data)==audit['skills']==287
+    assert sum(x['kind']=='插件' for x in data)==audit['plugins']==13
     assert len({x['id'] for x in data})==len(data)
+    assert len({x['url'] for x in data})==len(data)
+    assert len({x['sourceSha256'] for x in data})==len(data)
     for x in data:
         assert x['group'] in ['China','US','Others']
         assert x['url'].startswith('https://') and x['evidence'].startswith('https://')
         assert x['identity'] and x['license'] and x['checked']
+        assert evidence[x['id']]['sha256']==x['sourceSha256']
+        assert evidence[x['id']]['path']==x['sourcePath']
+        assert x['sourceCommit'] in x['url']
+        assert x['sourcePath'].endswith('SKILL.md' if x['kind']=='Skill' else 'plugin.json')
+        if x.get('pluginId'):
+            assert x['id'] in byid[x['pluginId']]['members']
+        for member in x.get('members',[]):
+            assert byid[member]['pluginId']==x['id']
+    for source,counts in audit['sources'].items():
+        subset=[x for x in data if x['sourceId']==source]
+        assert len(subset)==counts['skills']+counts['plugins']
     pages=list(SITE.rglob('*.html'))
     for page in pages:
         content=page.read_text(encoding='utf-8');p=Parser();p.feed(content)
@@ -43,11 +62,11 @@ def main():
         with zipfile.ZipFile(archive) as z:
             assert z.testzip() is None
             assert any(n.endswith('/LICENSE') for n in z.namelist())
-            if m['path']=='US/anthropic-legal':
-                for x in data:
-                    if x.get('parent')=='anthropic-legal':
-                        relative=x['url'].split('/tree/main/')[1]+'/SKILL.md'
-                        assert any(n.endswith('/'+relative) for n in z.namelist()),relative
+            for x in data:
+                if x['sourceRepo']==m['repo']:
+                    matches=[n for n in z.namelist() if n.split('/',1)[-1]==x['sourcePath']]
+                    assert len(matches)==1,x['sourcePath']
+                    assert hashlib.sha256(z.read(matches[0])).hexdigest()==x['sourceSha256'],x['id']
     assert len(re.findall('<article class="card"',(SITE/'index.html').read_text(encoding='utf-8')))==len(data)
-    print(json.dumps({'result':'passed','resources':len(data),'html_pages':len(pages),'mirrors':len(manifests),'checks':['static content','internal links','unique titles/canonical/H1','JSON-LD','license files','archive SHA-256','subskill paths']},ensure_ascii=False))
+    print(json.dumps({'result':'passed','resources':len(data),'html_pages':len(pages),'mirrors':len(manifests),'checks':['static content','internal links','unique titles/canonical/H1','JSON-LD','license files','archive SHA-256','all mirrored source-file hashes','unique source files','plugin membership','source counts']},ensure_ascii=False))
 if __name__=='__main__':main()

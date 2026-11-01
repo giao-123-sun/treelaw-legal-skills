@@ -1,28 +1,29 @@
 # 当前状态
 
-更新：2026-11-02。项目：Treelaw Legal Skills Directory。独立公开静态目录，不修改Treelaw桌面端运行代码。
+更新：2026-11-02。Treelaw Legal Skills Directory为独立公开静态目录。
 
-## 本版边界
+## 当前交付
 
-24项资源，18个独立资源入口（6项同源子技能）。China 8、US 14、Others 2。没有建立用户账户、执行器、使用量采集或质量评分。
+300项：287个Skill、13个插件；China 93、US 58、Others 149。4个来源按文件展开，15项指南、Prompt库与其他套件单列。插件与成员分别计数。
 
-页面支持国家目录、诉讼／非诉／涉外／合规、发布方、法系、涉及资料、资源形式、获取方式及关键词筛选。来源榜按协会、专业律师、法律教师、厂商、个人分组，并显示背景依据。自述与独立核对分开。
+页面支持搜索、业务分类、法系、资料类型、发布方、来源和获取方式筛选；每页24项，筛选与页码写入URL。插件详情直接链接成员。原始文件、固定版本、身份依据、许可和依赖均可查看。
 
-## 已验证
+## 验证
 
-- 构建34个HTML页面，关闭JavaScript仍有完整资源正文。
-- 自动校验所有站内链接、唯一H1／标题／canonical、JSON-LD。
-- Playwright检查搜索、组合筛选、空状态、清除筛选、URL恢复、手机布局、英文页、详情与无脚本阅读；15项通过。
-- 3个原始ZIP的SHA-256、许可证、压缩包完整性和6个Anthropic子技能路径通过。
-- 修正了清除按钮ID遮蔽表单reset方法的问题，复测通过。
-- GitHub Pages发布成功。公开网址再次通过相同15项浏览器检查。3个公开ZIP下载均为HTTP 200，内容哈希与本地一致，详见`acceptance.json`。
+- 311个HTML页面：站内链接、H1／标题／canonical、JSON-LD检查通过。
+- 300条路径和哈希记录一致，插件成员关系和来源计数通过。
+- 4个完整归档的许可证、ZIP完整性及SHA-256通过；其中262个目录条目与归档内原始文件逐项比对通过。
+- 本地20项浏览器检查通过：搜索、筛选、分页、URL恢复、手机页面、插件成员、英文页面、无脚本阅读等。
+- 本轮公开部署与下载复测状态见`acceptance.json`。
 
-## 文件与后续维护
+本轮未执行287个Skill的业务任务；没有使用量和效果评分。
 
-条目只维护 `data/catalog.json`，构建 `scripts/build.py`。`data/mirrors.json`记录固定版本，按原始许可保存3个完整上游ZIP，约4.1MB。第三方内容只归档，未运行。
+## 维护入口
 
-`docs/search-intent.md`记录五类用户、7次真实查询、候选关键词和新增来源。已生成静态任务页、详情页、sitemap、JSON-LD、llms.txt。发布后用仓库及站点完整URL做两次精确搜索，均未返回结果。当前记录为尚未检索到收录；AI回答引用未测。
+导入：`scripts/import_skills.py`。基础资料：`data/source-base.json`。译名：`data/task-labels.txt`。计数与排除原因：`data/import-audit.json`。归档：`data/mirrors.json`，4包约6.2MB。`data/catalog.json`为构建输入；再次导入会覆盖它。
 
-已发布仓库：`https://github.com/giao-123-sun/treelaw-legal-skills`。公开页面：`https://giao-123-sun.github.io/treelaw-legal-skills/`。GitHub Pages从main分支工作流构建。运行过程文件与截图置于忽略的`.local/`。
+构建及校验：`scripts/build.py`、`scripts/check.py`、`scripts/browser-check.cjs`。`site/`为生成目录，`.local/`为研究缓存和截图，两者忽略。公开站点由main分支Pages工作流发布。
 
-待后续任务：输出效果评测；新增地区的具名专业作者；有实际用户数据后再建设使用榜。当前不要用GitHub stars或作者身份推算效果分。
+本次决策：单项Skill与真实插件成为主目录；指南和Prompt库分开呈现；翻译副本不重复计数；不按英文语言推定美国法域；带依赖的技能提供完整上游包。
+
+后续独立工作：逐任务效果评测；扩充具名专业作者；有实际用户数据后建立使用榜。搜索意图和已做查询见`search-intent.md`。

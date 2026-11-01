@@ -1,0 +1,3 @@
+# Only required when re-importing upstream YAML frontmatter.
+# Building and hosting the static directory uses the Python standard library.
+PyYAML==6.0.3

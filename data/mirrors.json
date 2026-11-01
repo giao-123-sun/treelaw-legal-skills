@@ -31,5 +31,16 @@
     "sha256": "891f16b9bcc9b53fcb3ea54c660ea06ea8d0fab9400ac6e46f319006f34ab73d",
     "bytes": 1395242,
     "files": 315
+  },
+  {
+    "path": "Others/l0cka-legal",
+    "repo": "l0cka/legal-skills",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "license": "MIT",
+    "download": "https://codeload.github.com/l0cka/legal-skills/zip/f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02",
+    "sha256": "87d483f67f4d64992c975bfa152db01e684d8c5e2b3c16d5870b7188500415db",
+    "bytes": 2108207,
+    "files": 645
   }
 ]

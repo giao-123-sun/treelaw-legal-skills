@@ -1,114 +1,120 @@
-"""Dependency-free static directory. Every resource has crawlable HTML."""
+"""Build the static directory from checked-in metadata. No network calls."""
 import html
 import json
 import os
+import re
 import shutil
 from pathlib import Path
+
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'site'
 BASE=os.environ.get('SITE_URL','https://giao-123-sun.github.io/treelaw-legal-skills').rstrip('/')
 REPO='https://github.com/giao-123-sun/treelaw-legal-skills'
-DATA=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
-MIRRORS={x['path']:x for x in json.loads((ROOT/'data/mirrors.json').read_text(encoding='utf-8'))}
+def read(path):return json.loads((ROOT/path).read_text(encoding='utf-8'))
+DATA=read('data/catalog.json');REFS=read('data/reference-library.json');SOURCES=read('data/sources.json');AUDIT=read('data/import-audit.json')
 ORDER=['协会','专业律师','法律教师','厂商','个人']
-EN={'协会':'Association','专业律师':'Legal practitioner','法律教师':'Legal educator','厂商':'Vendor','个人':'Individual / community','诉讼':'Litigation','非诉':'Transactional','涉外':'Cross-border','合规':'Compliance','普通法系':'Common law','混合法系':'Mixed system','中国社会主义法律体系':'Chinese socialist legal system','法条':'Statutes','司法解释':'Judicial interpretations','案例':'Case law','指南 / Prompt':'Guide / Prompt','产品工作流':'Product workflow','Skill 目录':'Skill directory','原站阅读':'Read at source','原站获取':'Get at source','付费原站':'Paid library','仓库快照':'Repository archive','商业服务':'Commercial service'}
-EN_SUMMARY={
-'dri-ramos':'Civil defense prompting guidance covering discovery, motions, written submissions, and pilot evaluation.',
-'writelaw':'Prompts for English legal drafting, editing, summaries, and argument structure. Paid library.',
-'law-librarians':'Community-contributed prompts for legal research, teaching, drafting, and productivity.',
-'anthropic-legal':'Official plugins for commercial, corporate, privacy, employment, litigation, and other legal workflows. Configure jurisdiction and firm policies per skill.',
-'anthropic-nda-review':'Triage inbound NDAs against attorney-reviewed sales-side or purchasing-side playbook positions.',
-'anthropic-saas-msa-review':'Review SaaS and master services agreements using the team’s commercial playbook.',
-'anthropic-vendor-agreement-review':'Review supplier and procurement agreements against configured team positions.',
-'anthropic-amendment-history':'Organize a base contract and its amendments to trace changes across documents.',
-'anthropic-stakeholder-summary':'Turn commercial legal review information into a business-facing summary.',
-'anthropic-review':'Identify the contract type and attached documents, then route to the relevant commercial review workflow.',
-'cocounsel':'A commercial prompt library with Practical Law attorney-editor content, favorites, collections, and team administration.',
-'harvey-mtd':'A published workflow for complaint analysis, strategy confirmation, research, and motion drafting using Lexis sources.',
-'anytime':'Save and share successful prompts within a platform serving US plaintiff-side legal teams.',
-'legalon-prompts':'An in-house legal prompt guide for contract review, request intake, and matter management.',
-}
-EN_NAMES={
- 'anthropic-legal':'Claude for Legal · Official plugins',
- 'anthropic-nda-review':'NDA review & triage',
- 'anthropic-saas-msa-review':'SaaS / MSA agreement review',
- 'anthropic-vendor-agreement-review':'Vendor agreement review',
- 'anthropic-amendment-history':'Contract amendment history',
- 'anthropic-stakeholder-summary':'Stakeholder summary',
- 'anthropic-review':'Commercial contract review',
-}
+EN={'协会':'Association','专业律师':'Legal practitioner','法律教师':'Legal educator','厂商':'Vendor','个人':'Individual / community','诉讼':'Litigation','非诉':'Transactional','涉外':'Cross-border','合规':'Compliance','学习与培训':'Legal education','普通法系':'Common law','大陆法系':'Civil law','混合法系':'Mixed system','中国社会主义法律体系':'Chinese socialist legal system','法条':'Statutes','司法解释':'Judicial interpretations','案例':'Case law','插件':'Plugin','仓库快照':'Repository archive','原站获取':'Get at source'}
 TASKS=[
-('contract-review','合同审查 AI Skills 与提示词','Contract review, redlining, and in-house legal workflows.','China',lambda x:'非诉' in x['tasks']),
-('litigation','类案检索、证据与争议焦点梳理','Case research, evidence organization, and litigation drafting.','China',lambda x:'诉讼' in x['tasks']),
-('nda-review','NDA Review & Contract Redlining Skills','Find NDA triage, SaaS/MSA review, and commercial playbook resources.','US',lambda x:'非诉' in x['tasks']),
-('legal-research','Legal Research & Litigation Prompts','Compare research, discovery, civil defense, and motion-drafting resources.','US',lambda x:'诉讼' in x['tasks']),
+ ('contract-review','中国合同审查 Skills',False,lambda x:x['group']=='China' and '合同' in x['name']),
+ ('litigation','类案、证据与争议焦点',False,lambda x:x['group']=='China' and '诉讼' in x['tasks']),
+ ('nda-review','NDA Review & Contract Redlining',True,lambda x:x['group']!='China' and bool(re.search(r'nda|commercial|agreement|contract|redline',x.get('originalName','')))),
+ ('legal-research','Legal Research & Litigation',True,lambda x:x['group']!='China' and '诉讼' in x['tasks']),
 ]
-paths=[]
+pages=[]
 def esc(v):return html.escape(str(v),quote=True)
-def label(v,en=False):return EN.get(v,v) if en else v
-def link(path,current):return os.path.relpath(OUT/path,(OUT/current).parent).replace('\\','/')
-def summary(x,en):return EN_SUMMARY.get(x['id'],x['summary']) if en else x['summary']
-def name(x,en):return EN_NAMES.get(x['id'],x['name']) if en else x['name']
+def label(v,en):return EN.get(v,v) if en else v
+def name(x,en):return x.get('englishName',x['name']) if en else x['name']
+def link(target,current):return os.path.relpath(OUT/target,(OUT/current).parent).replace('\\','/')
 def write(path,text):
-    p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8');paths.append(path)
-def layout(path,title,description,body,en=False,schema=None):
-    root=link('index.html',path)
-    brand=f'<a class="brand" href="{root}" aria-label="Treelaw home"><img src="{link("assets/treelaw-mark.svg",path)}" alt="">Treelaw<small>LEGAL SKILLS DIRECTORY</small></a>'
-    structured={'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':description,'url':BASE+'/'+path}
-    if schema:structured.update(schema)
-    js=json.dumps(structured,ensure_ascii=False).replace('<','\\u003c')
-    return f'''<!doctype html><html lang="{'en' if en else 'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)} · Treelaw</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{BASE}/{path}"><meta property="og:title" content="{esc(title)} · Treelaw"><meta property="og:description" content="{esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/treelaw-mark.svg"><link rel="icon" href="{link('assets/treelaw-mark.svg',path)}"><link rel="stylesheet" href="{link('assets/style.css',path)}"><script type="application/ld+json">{js}</script><script src="{link('assets/app.js',path)}" defer></script></head><body><a class="skip" href="#main">{'Skip to content' if en else '跳到正文'}</a><header><div class="wrap head">{brand}<nav class="nav" aria-label="Main"><a href="{root}">{'Directory' if en else '资源目录'}</a><a href="{link('publishers.html',path)}">{'Publishers' if en else '来源榜'}</a><a class="repo" href="{REPO}" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header>{body}<section class="tasks"><div class="wrap"><b>{'Browse by task' if en else '从工作任务开始'}</b>{''.join(f'<a href="{link("tasks/"+slug+".html",path)}">{esc(t)}</a>' for slug,t,_,_,_ in TASKS)}</div></section><footer><div class="wrap">{brand}<p>{'Curated by Treelaw. Original works belong to their publishers. This directory presents resources and links; listing is not publisher endorsement. Archives retain the upstream license and attribution. Output quality has not been evaluated.' if en else 'Treelaw 负责整理与展示，作品归原发布方。收录不表示发布方为 Treelaw 背书。下载优先回到原站；有明确再分发许可的快照保留原署名和许可证。当前未做输出质量评测。'}<br><a href="{link('about.html',path)}">{'Editorial policy & licenses' if en else '收录规则与授权说明'}</a> · <a href="{link('llms.txt',path)}">llms.txt</a> · 2026-11-02</p></div></footer></body></html>'''
-def card(x,path,en=False):
-    keywords=' '.join([x['name'],x['author'],x['keywords'],x['summary'],summary(x,True),*x['tasks'],*x['jurisdictions']])
-    attrs=dict(text=keywords,task=x['tasks'],publisher=[x['publisher']],system=x['systems'],material=x['materials'],kind=[x['kind']],access=[x['access']],name=x['name'],date=x['updated'] or x['published'] or '')
-    mirror=x.get('mirror');date=x['published'] or x.get('created')
-    date_label=('First published' if en else '发布') if x['published'] else ('Repo created' if en else '仓库创建') if x.get('created') else ('First published' if en else '发布')
-    download=f'<a href="{REPO}/blob/main/{mirror}/README.md" target="_blank" rel="noopener">{label("仓库快照",en)} ↓</a>' if mirror else ''
-    return f'''<article class="card" data-filter="{esc(json.dumps(attrs,ensure_ascii=False))}"><div class="topline"><span class="badge">{esc(label(x['publisher'],en))}</span><span>{esc(label(x['kind'],en))}</span><span>{x['group']}</span></div><h2><a href="{link('resources/'+x['id']+'.html',path)}">{esc(name(x,en))}</a></h2><p>{esc(summary(x,en))}</p><div class="tags">{' · '.join(esc(label(t,en)) for t in x['tasks'])}{' · '+('Subskill' if en else '同源子技能') if x.get('parent') else ''}</div><div class="author">{esc(x['author'])}</div><div class="meta">{date_label} {date or ('Not disclosed' if en else '未披露')} · {esc(x['license'])}</div><div class="actions"><a href="{link('resources/'+x['id']+'.html',path)}">{'View details' if en else '背景与用途'} →</a><a href="{esc(x['url'])}" target="_blank" rel="noopener">{'Original source' if en else '原始来源'} ↗</a>{download}</div></article>'''
+    p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8');pages.append(path)
+def brand(path):return f'<a class="brand" href="{link("index.html",path)}"><img src="{link("assets/treelaw-mark.svg",path)}" alt="">Treelaw<small>LEGAL SKILLS DIRECTORY</small></a>'
+def layout(path,title,desc,body,en=False,schema=None):
+    data={'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':BASE+'/'+path}
+    if schema:data.update(schema)
+    structured=json.dumps(data,ensure_ascii=False).replace('<','\\u003c')
+    tasklinks=''.join(f'<a href="{link("tasks/"+s+".html",path)}">{esc(t)}</a>' for s,t,_,_ in TASKS)
+    return f'''<!doctype html><html lang="{'en' if en else 'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{esc(title)} · Treelaw</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{BASE}/{path}">
+<meta property="og:title" content="{esc(title)} · Treelaw"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}">
+<link rel="icon" href="{link('assets/treelaw-mark.svg',path)}"><link rel="stylesheet" href="{link('assets/style.css',path)}"><script type="application/ld+json">{structured}</script><script src="{link('assets/app.js',path)}" defer></script></head><body>
+<a class="skip" href="#main">{'Skip to content' if en else '跳到正文'}</a><header><div class="wrap head">{brand(path)}<nav class="nav" aria-label="Main"><a href="{link('index.html',path)}">{'Skills' if en else '技能目录'}</a><a href="{link('publishers.html',path)}">{'Publishers' if en else '来源榜'}</a><a href="{link('references.html',path)}">{'Guides' if en else '参考资料'}</a><a class="repo" href="{REPO}" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header>
+{body}<section class="tasks"><div class="wrap"><b>{'Browse by task' if en else '从工作任务开始'}</b>{tasklinks}</div></section><footer><div class="wrap">{brand(path)}<p>{'Curated by Treelaw. Original works belong to their publishers. Skills link to source files; plugins link to manifests. Listing does not imply endorsement. Upstream licenses apply. Execution quality has not been evaluated.' if en else 'Treelaw 负责整理与展示，作品归原发布方。技能对应原始文件，插件对应真实清单。收录不表示发布方背书。下载遵循原许可，当前未做运行效果评测。'}<br><a href="{link('about.html',path)}">{'Editorial policy' if en else '收录与授权说明'}</a> · <a href="{link('llms.txt',path)}">llms.txt</a> · 2026-11-02</p></div></footer></body></html>'''
+
+def card(x,path,en):
+    text=' '.join([x['name'],x['originalName'],x['author'],x['keywords'],x['summary'],*x['tasks'],*x['jurisdictions']])
+    attrs=dict(text=text,task=x['tasks'],publisher=[x['publisher']],system=x['systems'],material=x['materials'],kind=[x['kind']],source=[x['sourceId']],access=[x['access']],name=x['name'],date=x['updated'] or '')
+    actions=f'<a href="{link("resources/"+x["id"]+".html",path)}">{"Details" if en else "用途与使用条件"} →</a><a href="{esc(x["url"])}" target="_blank" rel="noopener">{"Source file" if en else "原始文件"} ↗</a>'
+    if x.get('pluginId'):actions+=f'<a href="{link("resources/"+x["pluginId"]+".html",path)}">{"Plugin" if en else "所属插件"}</a>'
+    members=f' · {len(x["members"])} '+('listed skills' if en else '项已收录技能') if x.get('members') else ''
+    return f'''<article class="card" data-filter="{esc(json.dumps(attrs,ensure_ascii=False))}"><div class="topline"><span class="badge">{esc(label(x['kind'],en))}</span><span>{esc(label(x['publisher'],en))}</span><span>{x['group']}</span></div>
+<h2><a href="{link('resources/'+x['id']+'.html',path)}">{esc(name(x,en))}</a></h2><div class="original">{esc(x['originalName'])}</div><p class="skill-description">{esc(x['summary'])}</p><div class="tags">{' · '.join(esc(label(t,en)) for t in x['tasks'])}{members}</div><div class="author">{esc(x['author'])} · {esc(x['suiteName'])}</div><div class="meta">{esc(x['license'])} · {x['sourceCommit'][:7]}</div><div class="actions">{actions}</div></article>'''
+
 def listing(path,title,desc,items,group=None,en=False):
-    groups=[('All','全部'),('China','中国'),('US','美国'),('Others','其他法域')]
-    nav=''.join(f'<a class="{"active" if (g==group or (g=="All" and group is None)) else ""}" href="{link("index.html" if g=="All" else g+"/index.html",path)}">{g if en else zh}<small>{len(DATA) if g=="All" else sum(x["group"]==g for x in DATA)}</small></a>' for g,zh in groups)
-    fields=[('task','业务类型','Practice',['诉讼','非诉','涉外','合规']),('publisher','发布方','Publisher',ORDER),('system','法系','Legal system',['中国社会主义法律体系','大陆法系','普通法系','混合法系']),('material','涉及资料','Legal material',['法条','司法解释','案例']),('kind','资源形式','Resource type',sorted(set(x['kind'] for x in DATA))),('access','获取方式','Access',sorted(set(x['access'] for x in DATA)))]
-    filters=''.join(f'<label>{english if en else zh}<select id="{key}" name="{key}"><option value="">{"All" if en else "全部"}</option>'+''.join(f'<option value="{esc(v)}">{esc(label(v,en))}</option>' for v in vals)+'</select></label>' for key,zh,english,vals in fields)
-    sorteditems=sorted(items,key=lambda x:ORDER.index(x['publisher']))
-    body=f'''<main id="main" class="wrap"><section class="hero"><div><p class="eyebrow">TREELAW / THE LEGAL RESOURCE INDEX</p><h1>{esc(title)}<span>{'Skills, prompts & professional practice guides' if en else '法律技能、提示词与专业实践指南'}</span></h1></div><p class="hero-note">{esc(desc)}<br><strong>{'Start with the task. Check the author. Go to the source.' if en else '先看任务，再看作者，最后回到原始来源。'}</strong></p></section><nav class="countries" aria-label="Jurisdiction">{nav}<span class="stamp">REVIEWED 2026.11.02</span></nav><div class="browse"><form class="filters" id="filters"><h2>{'Refine your search' if en else '筛选资源'}</h2>{filters}<button id="clear-filters" class="reset" type="button">{'Clear filters' if en else '清除筛选'}</button><p>{'Jurisdiction, language and legal system are recorded separately. Unspecified jurisdictions stay unspecified.' if en else '国家、语言与法系分别记录。法系仅作目录分类。通用方法不直接标为某国法律规则。'}</p></form><section aria-label="Resources"><label class="skip" for="query">Search</label><input class="search" id="query" type="search" placeholder="{'Search NDA, discovery, publisher…' if en else '搜索任务、作者或技能，如：合同审查、类案检索、NDA'}"><div class="quick">{''.join(f'<button type="button" data-query="{q}">{q}</button>' for q in (['NDA','contract review','discovery','legal research'] if en else ['合同审查','类案检索','争议焦点','NDA','合规']))}</div><div class="result-bar"><span aria-live="polite"><b id="count">{len(items)}</b> {'resources' if en else '项资源'}</span><label>{'Sort ' if en else '排序 '}<select id="sort"><option value="source">{'Publisher grouping' if en else '按发布方分组'}</option><option value="recent">{'Latest recorded update' if en else '最近记录更新'}</option><option value="name">{'Name' if en else '名称'}</option></select></label></div><div class="cards">{''.join(card(x,path,en) for x in sorteditems)}</div><p id="empty" class="empty" hidden>{'No matching resources. Clear a filter or try another task.' if en else '暂无匹配资源。可清除筛选，或换一个任务关键词。'}</p><noscript><p>筛选需要 JavaScript。所有资源和详情链接已在正文显示。</p></noscript></section></div></main>'''
-    schema={'mainEntity':{'@type':'ItemList','numberOfItems':len(items),'itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+'/resources/'+x['id']+'.html','name':x['name']} for i,x in enumerate(sorteditems)]}}
+    nav=''.join(f'<a class="{"active" if g==group or g=="All" and group is None else ""}" href="{link("index.html" if g=="All" else g+"/index.html",path)}">{g if en else zh}<small>{len(DATA) if g=="All" else sum(x["group"]==g for x in DATA)}</small></a>' for g,zh in [('All','全部'),('China','中国'),('US','美国'),('Others','其他法域')])
+    fields=[('task','业务类型','Practice',['诉讼','非诉','涉外','合规','学习与培训']),('publisher','发布方','Publisher',ORDER),('system','法系','Legal system',['中国社会主义法律体系','大陆法系','普通法系','混合法系']),('material','涉及资料','Material',['法条','司法解释','案例']),('kind','形式','Type',['Skill','插件']),('source','来源套件','Source',[s['id'] for s in SOURCES]),('access','获取方式','Access',['仓库快照','原站获取'])]
+    source_labels={s['id']:s['name'] for s in SOURCES};filters=''
+    for key,zh,english,values in fields:
+        opts=''.join(f'<option value="{esc(v)}">{esc(source_labels[v] if key=="source" else label(v,en))}</option>' for v in values)
+        filters+=f'<label>{english if en else zh}<select id="{key}" name="{key}"><option value="">{"All" if en else "全部"}</option>{opts}</select></label>'
+    ordered=sorted(items,key=lambda x:(ORDER.index(x['publisher']),x['kind']!='Skill'))
+    stats=f'{sum(x["kind"]=="Skill" for x in items)} '+('individual skills' if en else '个单项 Skill')+' · '+str(sum(x['kind']=='插件' for x in items))+' '+('plugins' if en else '个插件')
+    pills=f'<div class="type-tabs"><button type="button" data-kind="" aria-pressed="true">{"All" if en else "全部"}</button><button type="button" data-kind="Skill" aria-pressed="false">Skill</button><button type="button" data-kind="插件" aria-pressed="false">{"Plugins" if en else "插件"}</button><span>{stats}</span></div>'
+    body=f'''<main id="main" class="wrap"><section class="hero"><div><p class="eyebrow">TREELAW / LEGAL SKILLS & PLUGINS</p><h1>{esc(title)}<span>{stats}</span></h1></div><p class="hero-note">{esc(desc)}<br><strong>{'One task, one skill. Keep its source and dependencies in view.' if en else '找到具体任务，打开具体技能。作者与依赖一并列清。'}</strong></p></section><nav class="countries" aria-label="Jurisdiction">{nav}<span class="stamp">REVIEWED 2026.11.02</span></nav><div class="browse">
+<form class="filters" id="filters"><h2>{'Refine search' if en else '筛选技能'}</h2>{filters}<button id="clear-filters" class="reset" type="button">{'Clear filters' if en else '清除筛选'}</button><p>{'General workflows are in Others when governing law is configurable.' if en else '通用工作流按项目配置适用法，归入Others。身份自述与独立核对在详情中分开说明。'}</p></form>
+<section aria-label="Resources"><label class="skip" for="query">Search</label><input class="search" id="query" type="search" placeholder="{'Search NDA, deposition, evidence…' if en else '搜索具体任务，如：合同审查、争议焦点、保密协议、尽调'}"><div class="quick">{''.join(f'<button type="button" data-query="{q}">{q}</button>' for q in (['NDA','deposition','privacy','legislation'] if en else ['合同','类案检索','争议焦点','NDA','尽调']))}</div>{pills}
+<div class="result-bar"><span aria-live="polite"><b id="count">{len(items)}</b> {'entries' if en else '项匹配'}</span><label>{'Sort ' if en else '排序 '}<select id="sort"><option value="source">{'Publisher' if en else '发布方分组'}</option><option value="recent">{'Source updated' if en else '来源更新'}</option><option value="name">{'Name' if en else '名称'}</option></select></label></div><div class="cards">{''.join(card(x,path,en) for x in ordered)}</div><p id="empty" class="empty" hidden>{'No match. Clear a filter or try a different task.' if en else '暂无匹配技能。可清除筛选或换一个任务关键词。'}</p>
+<nav class="pagination" id="pagination" aria-label="Pagination" hidden><button type="button" id="previous">{'Previous' if en else '上一页'}</button><span id="page-label" aria-live="polite"></span><button type="button" id="next">{'Next' if en else '下一页'}</button></nav><noscript><p>全部条目已列在正文中。筛选与分页需要JavaScript。</p></noscript></section></div></main>'''
+    schema={'mainEntity':{'@type':'ItemList','numberOfItems':len(items),'itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+'/resources/'+x['id']+'.html','name':name(x,en)} for i,x in enumerate(ordered)]}}
     write(path,layout(path,title,desc,body,en,schema))
+
 def detail(x):
-    path='resources/'+x['id']+'.html';en=x['group']=='US';mir=MIRRORS.get(x.get('mirror'))
-    facts=[('发布方 / Publisher',label(x['publisher'],en)+' · '+x['author']),('身份依据 / Evidence',x['identity']),('法域 / Jurisdiction','；'.join(x['jurisdictions'])),('法系 / Legal system','；'.join(x['systems']) or '未指定 / Not specified'),('语言 / Language',' / '.join(x['languages'])),('任务 / Practice',' / '.join(label(v,en) for v in x['tasks'])),('资料 / Materials',' / '.join(label(v,en) for v in x['materials']) or '未逐项标注 / Not itemized'),('首次发布 / Published',x['published'] or '未披露 / Not disclosed'),('仓库创建 / Repo created',x.get('created','不适用 / N/A')),('更新线索 / Update',x['updated'] or '未记录 / Not recorded'),('核对日期 / Checked',x['checked']),('授权 / License',x['license']),('依赖 / Dependencies',x['dependencies']),('效果测试 / Evaluation','尚未运行 / Not run')]
-    extra=''
-    if mir:
-        facts.extend([('镜像版本 / Commit',mir['commit']),('SHA-256',mir['sha256'])])
-        extra=f'<a href="{REPO}/blob/main/{mir["path"]}/README.md">仓库下载与许可证 / Archive & license ↓</a>'
-    body=f'''<main id="main" class="wrap detail"><div class="crumb"><a href="{link('index.html',path)}">Treelaw</a> / <a href="{link(x['group']+'/index.html',path)}">{x['group']}</a> / {esc(label(x['kind'],en))}</div><span class="badge">{esc(label(x['publisher'],en))}</span><h1>{esc(name(x,en))}</h1><p class="lead">{esc(summary(x,en))}</p><div class="actions"><a href="{esc(x['url'])}" target="_blank" rel="noopener">原始来源 / Original source ↗</a><a href="{esc(x['evidence'])}" target="_blank" rel="noopener">发布方依据 / Publisher evidence ↗</a>{extra}</div><dl class="facts">{''.join(f'<dt>{esc(k)}</dt><dd>{esc(v)}</dd>' for k,v in facts)}</dl><p class="notice">{esc(x.get('licenseNote','本页只展示目录信息。下载和使用遵循原发布方许可。 / This page is a directory record. Upstream terms govern download and use.'))}</p><div class="prose"><h2>日期与版本 / Dates & versions</h2><p>首次发布、仓库创建与最近推送分别记录。“更新线索”来自仓库推送或页面更新日期，未代表每个子技能的修改日。归档使用固定提交；原站可能已有更新。 / Release, repository creation and last push are separate dates. A repository push does not date each skill.</p></div></main>'''
-    schema={'@type':'CreativeWork','name':x['name'],'description':summary(x,en),'author':{'@type':'Organization' if x['publisher'] in ['协会','厂商'] else 'Person','name':x['author']},'citation':[x['url'],x['evidence']],'inLanguage':x['languages'],'isAccessibleForFree':x['access'] not in ['商业服务','付费原站']}
-    if x['published']:schema['datePublished']=x['published']
-    write(path,layout(path,x['name'],summary(x,en),body,en,schema))
-def build():
-    OUT.mkdir(exist_ok=True)
-    shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
-    listing('index.html','法律技能与提示词。','按法域、法律任务和发布方查找资源。每项列明专业背景、日期、授权与原件入口。',DATA)
-    for group,title,desc,en in [('China','中国法律 Skills 与提示词','诉讼、非诉、涉外与合规任务，原作者和专业背景逐项说明。',False),('US','Legal skills for legal work.','A source-attributed directory for US lawyers and in-house counsel. Browse skills, prompts and practice guides.',True),('Others','其他法域与跨境资源','加拿大与跨法域社区资源。适用范围按条目说明，逐步补充。',False)]:
-        listing(group+'/index.html',title,desc,[x for x in DATA if x['group']==group],group,en)
-        text=f'# {group} · Treelaw Legal Skills\n\n按发布方分组；原件、许可与身份依据见详情。\n\n'
-        for x in DATA:
-            if x['group']==group:text+=f'- [{x["name"]}]({x["url"]}) — {x["publisher"]} · {x["kind"]} · {" / ".join(x["tasks"])} · {x["license"]}\n'
-        (ROOT/group/'README.md').write_text(text,encoding='utf-8')
-    for slug,title,desc,group,predicate in TASKS:listing('tasks/'+slug+'.html',title,desc,[x for x in DATA if x['group']==group and predicate(x)],group,group=='US')
-    for x in DATA:detail(x)
+    path='resources/'+x['id']+'.html';en=x['group']=='US'
+    facts=[('发布方 / Publisher',label(x['publisher'],en)+' · '+x['author']),('身份依据 / Evidence',x['identity']),('法域 / Jurisdiction','；'.join(x['jurisdictions'])),('任务 / Practice',' / '.join(label(v,en) for v in x['tasks'])),('语言 / Language',' / '.join(x['languages'])),('调用方式 / Invocation',x['invocation']),('依赖 / Dependencies',x['dependencies']),('首次发布 / Published',x['published'] or '单项日期未披露'),('仓库创建 / Created',x.get('created','未记录')),('仓库更新 / Updated',x['updated'] or '未记录'),('核对 / Checked',x['checked']),('授权 / License',x['license']),('原始文件 / Path',x['sourcePath']),('固定提交 / Commit',x['sourceCommit']),('SHA-256',x['sourceSha256']),('本次核验 / Check',x['entryEvidence']),('效果测试 / Evaluation','未执行 / Not run')]
+    actions=f'<a href="{esc(x["url"])}" target="_blank" rel="noopener">{"Original file" if en else "打开原始文件"} ↗</a><a href="{esc(x["evidence"])}">{"Publisher evidence" if en else "作者背景依据"} ↗</a>'
+    if x.get('mirror'):actions+=f'<a href="{REPO}/blob/main/{x["mirror"]}/README.md">{"Complete upstream archive" if en else "完整套件下载与许可"} ↓</a>'
+    if x.get('pluginId'):actions+=f'<a href="{link("resources/"+x["pluginId"]+".html",path)}">{"Containing plugin" if en else "查看所属插件"} →</a>'
+    members=''
+    if x.get('members'):
+        byid={d['id']:d for d in DATA}
+        members='<section class="member-list"><h2>'+('Listed task skills' if en else '插件中已收录的业务技能')+f' · {len(x["members"])}</h2><ul>'+''.join(f'<li><a href="{id}.html">{esc(name(byid[id],en))}</a></li>' for id in x['members'])+'</ul></section>'
+    body=f'''<main id="main" class="wrap detail"><div class="crumb"><a href="{link('index.html',path)}">Treelaw</a> / <a href="{link(x['group']+'/index.html',path)}">{x['group']}</a> / {esc(label(x['kind'],en))}</div><span class="badge">{esc(label(x['kind'],en))}</span><h1>{esc(name(x,en))}</h1><p class="original">{esc(x['originalName'])} · {esc(x['suiteName'])}</p><p class="lead">{esc(x.get('description',x['summary']))}</p><div class="actions">{actions}</div>
+<p class="notice">{'The skill is a task entry within its upstream package. Follow the package instructions for shared references, tools and playbooks. Source-file checks are separate from execution tests.' if en else '单个 Skill 是套件中的任务入口。共享参考文件、工具与机构规则按原套件说明配置。下载入口提供完整上游套件，保留相关参考文件。原始文件已读取，运行效果尚未测试。'}</p>{members}<dl class="facts">{''.join(f'<dt>{esc(k)}</dt><dd>{esc(v)}</dd>' for k,v in facts)}</dl><p class="notice">中文名称为目录编辑译名。仓库更新日期未代表单项技能的修改日。原始名称、固定版本与校验值一并保留。</p></main>'''
+    write(path,layout(path,name(x,en),x['summary'],body,en,{'@type':'CreativeWork','author':{'@type':'Organization' if x['publisher']=='厂商' else 'Person','name':x['author']},'citation':[x['url'],x['evidence']],'inLanguage':x['languages']}))
+
+def references():
+    sections=''.join(f'<article class="source-row"><span class="badge">{esc(x["kind"])}</span><h2><a href="{esc(x["url"])}">{esc(x["name"])} ↗</a></h2><p>{esc(x["summary"])}</p><p>{esc(x["author"])} · {esc(x["publisher"])} · {esc(x["license"])}</p><p>{esc(x["identity"])}</p></article>' for x in REFS)
+    body=f'<main id="main" class="wrap detail prose"><p class="eyebrow">TREELAW / REFERENCE LIBRARY</p><h1>指南、Prompt 与其他套件。</h1><p class="lead">{len(REFS)}项补充资料。整库介绍、指南和商业平台流程单列，不计入Skill与插件数量。此页的套件尚未逐文件展开。</p>{sections}</main>'
+    write('references.html',layout('references.html','法律Prompt、指南与套件参考','原始发布者的法律提示库、协会指南和商业工作流入口。',body))
+
+def publishers():
+    entries=[dict(name=s['name'],publisher=s['publisher'],identity=s['identity'],evidence=s['evidence'],url='index.html?source='+s['id'],count=f'{s["counts"]["skills"]} Skill / {s["counts"]["plugins"]} 插件') for s in SOURCES]
+    entries.extend(dict(x,count='参考资料；未计入技能数量') for x in REFS)
     groups=''
     for category in ORDER:
-        # Do not inflate publisher counts with subskills from the same repository.
-        selected=[x for x in DATA if x['publisher']==category and not x.get('parent')]
-        groups+=f'<section class="sources-group"><h2>{category} <small> / {len(selected)}</small></h2>'+''.join(f'<div class="source-row"><a href="resources/{x["id"]}.html">{esc(x["name"])}</a><p>{esc(x["identity"])}</p><a href="{esc(x["evidence"])}">查看依据 ↗</a></div>' for x in selected)+'</section>'
-    write('publishers.html',layout('publishers.html','来源榜 · 看发布方与专业依据','按协会、专业律师、法律教师、厂商和个人整理发布方，不使用数字信用等级。',f'<main id="main" class="wrap detail"><p class="eyebrow">TREELAW / PUBLISHER INDEX</p><h1>谁发布，依据是什么。</h1><p class="lead">协会、专业律师、法律教师、厂商、个人。按这五类查阅原作者及背景证据。</p><p class="notice">分组次序是目录顺序。身份自述与独立核对分别标明。当前没有使用人数或输出质量排名。同一仓库的子技能合并计数。</p>{groups}</main>'))
-    about='''<main id="main" class="wrap detail prose"><p class="eyebrow">TREELAW / EDITORIAL NOTES</p><h1>来源清楚，边界清楚。</h1><h2>我们做什么</h2><p>Treelaw 整理法律 Skill、Prompt、指南和产品工作流的原始入口。四种交付形式分开标注。本站不自动执行、安装第三方内容。</p><h2>如何分类</h2><p>一级目录为 China、US、Others。按服务的法律工作划分，不按作者国籍或页面语言推定法域。China目前指中国大陆；US含美国法律工作与英文通用商业方法，具体范围写在详情中。加拿大属混合法系，不能据此推定每条资源同时覆盖魁北克和其他省份。</p><p>法系筛选包括中国社会主义法律体系、大陆法系、普通法系和混合法系。司法解释、法条和案例属于资料类型，单独筛选。标签表示技能涉及的材料，不表示随包附赠法律数据库。未标法系的通用方法不参与法系匹配。</p><h2>发布方与排行</h2><p>来源榜依次展示协会、专业律师、法律教师、厂商与个人。行业身份、独立核对和作者自述写明。未采集使用数据，不显示使用量、效果分或虚构星级。</p><h2>原件与许可证</h2><p>所有条目保留原站链接。当前归档三个明确采用MIT或Apache-2.0的仓库，保存完整原始ZIP、LICENSE、上游NOTICE（若有）、提交号与SHA-256。其他资源只作链接索引。转载条件未明确的材料不复制全文；原始作者可通过GitHub issue提交更正。</p><h2>日期与核验</h2><p>本轮资料核对日为2026-11-02。首次发布、仓库创建、推送日期分别记录；未知字段留空。完成的是来源与授权资料核对，输出效果未测。GitHub快照是归档，不等于经过Treelaw运行验收。</p><h2>搜索与开放目录</h2><p>每项资源都有静态正文、独立URL和引用。站点提供sitemap.xml、llms.txt与JSON目录。SEO/GEO本轮验收检查可读性及链接结构；搜索引擎收录和AI引用另行观察。</p><p>联系方式：通过仓库 Issues 提交来源、许可或署名更正。</p></main>'''
-    write('about.html',layout('about.html','收录规则、来源与授权说明','Treelaw法律技能目录的分类、发布方、日期和再分发规则。',about))
+        subset=[x for x in entries if x['publisher']==category]
+        groups+=f'<section class="sources-group"><h2>{category} <small>/ {len(subset)}</small></h2>'+''.join(f'<div class="source-row"><a href="{esc(x["url"])}">{esc(x["name"])}</a><p>{esc(x["identity"])}</p><p>{esc(x["count"])}</p><a href="{esc(x["evidence"])}">背景依据 ↗</a></div>' for x in subset)+'</section>'
+    write('publishers.html',layout('publishers.html','来源榜 · 发布方与专业依据','按发布方类型查看原始来源和身份依据。',f'<main id="main" class="wrap detail"><p class="eyebrow">TREELAW / PUBLISHER INDEX</p><h1>谁发布，依据是什么。</h1><p class="lead">每个来源只列一次，单项技能在对应目录展开。</p><p class="notice">按协会、专业律师、法律教师、厂商、个人分组。作者自述与独立核对分别说明。当前没有使用人数榜或效果评分。</p>{groups}</main>'))
+
+def about():
+    rows=''.join(f'<li>{esc(s["repo"])}：{s["skills"]}个Skill、{s["plugins"]}个插件；扫描{s["scanned"]}个技能文件。</li>' for s in AUDIT['sources'].values())
+    body=f'''<main id="main" class="wrap detail prose"><p class="eyebrow">TREELAW / EDITORIAL NOTES</p><h1>按文件收录，按用途查找。</h1><h2>数量口径</h2><p>{AUDIT['skills']}个单项Skill、{AUDIT['plugins']}个插件，共{AUDIT['total']}项。另有{len(REFS)}项参考资料。插件与成员分别计数。</p><ul>{rows}</ul><h2>核验方法</h2><p>逐个读取SKILL.md，解析名称与描述，读取正文；插件读取真实plugin.json。记录路径、固定提交和SHA-256。相同文件按哈希合并，同一插件的Claude和Codex入口合并。38份英文平行版本不重复计数。初始化、技能管理、工作区辅助项排除；完整插件包仍保留这些文件。</p><p>排除路径和原因见仓库data/import-audit.json。上游格式异常单列。本轮核验文件与元数据，未执行全部技能。</p><h2>分类与作者</h2><p>China指中国大陆。US对应美国法律工作。澳大利亚、欧盟、以及使用时配置法域的通用方法放入Others。英文技能不直接归美国。法条、司法解释和案例是技能处理的资料类型，不表示随包提供法律数据库。</p><p>发布方按协会、专业律师、法律教师、厂商、个人分组；作者自述与独立核对分别说明。没有使用量或效果分。</p><h2>授权与下载</h2><p>获准再分发的上游ZIP保留原始署名、LICENSE、NOTICE（若有）、提交号和校验值。受限许可的技能只展示编辑整理的名称与用途，链接原始文件，不复制完整指令。单项Skill可能引用同套件的其他文件，下载入口提供完整套件。</p><h2>时间与维护</h2><p>核对日2026-11-02。单项首次发布时间未披露时留空，仓库创建与推送日期另列。本站提供静态正文、详情页、sitemap、JSON-LD与llms.txt。收录或AI引用效果另行观察。来源更正通过GitHub Issue提交。</p></main>'''
+    write('about.html',layout('about.html','收录规则、数量与授权说明','按单项Skill、插件清单和固定版本核对的法律技能目录。',body))
+
+def build():
+    # Validate the absolute generated-directory boundary before recursive removal.
+    assert OUT.resolve()==ROOT.resolve()/'site' and OUT.resolve()!=ROOT.resolve()
+    if OUT.exists():shutil.rmtree(OUT)
+    OUT.mkdir();shutil.copytree(ROOT/'assets',OUT/'assets')
+    listing('index.html','按任务，找到法律技能。','每张卡片对应一个实际Skill或插件。法律研究、合同、诉讼、合规与文书工作，逐项查找。',DATA)
+    for group,title,desc,en in [('China','中国法律技能。','面向中国大陆法律工作，逐项打开原始技能。',False),('US','Skills for US legal work.','US litigation, employment, clinic and legal education. General commercial workflows are under Others and the NDA task page.',True),('Others','其他法域与通用技能。','澳大利亚、欧盟及按项目配置法域的工作流。每项注明适用范围。',False)]:
+        selected=[x for x in DATA if x['group']==group];listing(group+'/index.html',title,desc,selected,group,en)
+        (ROOT/group/'README.md').write_text(f'# {group} · Treelaw\n\n{len(selected)}项：{sum(x["kind"]=="Skill" for x in selected)}个Skill、{sum(x["kind"]=="插件" for x in selected)}个插件。\n\n'+''.join(f'- [{x["name"]}]({BASE}/resources/{x["id"]}.html) — {x["kind"]} · {x["author"]} · [原始文件]({x["url"]})\n' for x in selected),encoding='utf-8')
+    for slug,title,en,predicate in TASKS:listing('tasks/'+slug+'.html',title,'按具体任务比较技能；法域、作者和依赖在每项说明中列清。' if not en else 'Compare task-level skills. Check jurisdiction, author and dependencies per entry.',[x for x in DATA if predicate(x)],en=en)
+    for x in DATA:detail(x)
+    references();publishers();about()
     shutil.copy2(ROOT/'data/catalog.json',OUT/'catalog.json')
-    write('llms.txt','# Treelaw Legal Skills Directory\n\nSource-attributed directory of legal skills, prompts and guides. China, US and Others are jurisdiction-oriented groups. No usage rankings or output-quality scores have been measured. Publisher categories are not numerical trust scores.\n\n'+''.join(f'- [{x["name"]}]({BASE}/resources/{x["id"]}.html): {x["group"]}; {x["publisher"]}; {x["kind"]}; {x["license"]}\n' for x in DATA)+'\n## Data and policy\n- [Catalog JSON]('+BASE+'/catalog.json)\n- [Editorial policy]('+BASE+'/about.html)\n')
-    write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}/{p}</loc><lastmod>2026-11-02</lastmod></url>' for p in paths if p.endswith('.html'))+'</urlset>')
-    write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
-    write('.nojekyll','')
-    print(f'Built {len(DATA)} resource records; {sum(p.endswith(".html") for p in paths)} HTML pages')
+    write('llms.txt','# Treelaw Legal Skills & Plugins\n\n'+f'{AUDIT["skills"]} individual skills and {AUDIT["plugins"]} plugins. Each entry has a pinned source file, publisher evidence and license. Member counts and plugin counts are separate. Execution quality is untested.\n\n'+''.join(f'- [{x["name"]}]({BASE}/resources/{x["id"]}.html): {x["kind"]}; {x["group"]}; {x["author"]}; {x["license"]}\n' for x in DATA)+f'\n[Catalog JSON]({BASE}/catalog.json)\n[References]({BASE}/references.html)\n[Editorial policy]({BASE}/about.html)\n')
+    write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}/{p}</loc><lastmod>2026-11-02</lastmod></url>' for p in pages if p.endswith('.html'))+'</urlset>')
+    write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n');write('.nojekyll','')
+    print(f'Built {len(DATA)} entries / {sum(p.endswith(".html") for p in pages)} HTML pages')
 if __name__=='__main__':build()

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "panrui",
+    "repo": "pa1nrui1/legal-skills",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "publisher": "专业律师",
+    "author": "潘睿",
+    "identity": "作者自述为广东广和（长春）律师；本目录尚未独立核对执业身份。",
+    "evidence": "https://github.com/pa1nrui1/legal-skills",
+    "license": "MIT",
+    "name": "潘睿 · 中国法律工作流",
+    "counts": {
+      "repo": "pa1nrui1/legal-skills",
+      "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+      "skills": 54,
+      "scanned": 59,
+      "plugins": 1
+    }
+  },
+  {
+    "id": "anthropic",
+    "repo": "anthropics/claude-for-legal",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "publisher": "厂商",
+    "author": "Anthropic",
+    "identity": "模型厂商官方发布；未见每项技能具名律师审阅名单。",
+    "evidence": "https://claude.com/blog/claude-for-the-legal-industry",
+    "license": "Apache-2.0",
+    "name": "Claude for Legal · 官方插件集",
+    "counts": {
+      "repo": "anthropics/claude-for-legal",
+      "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+      "skills": 107,
+      "scanned": 151,
+      "plugins": 11
+    }
+  },
+  {
+    "id": "l0cka",
+    "repo": "l0cka/legal-skills",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "publisher": "个人",
+    "author": "l0cka",
+    "identity": "具名GitHub账号；本轮未独立核实律师执业身份。",
+    "evidence": "https://github.com/l0cka/legal-skills",
+    "license": "MIT",
+    "name": "l0cka · Legal Skills",
+    "counts": {
+      "repo": "l0cka/legal-skills",
+      "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+      "skills": 88,
+      "scanned": 98,
+      "plugins": 1
+    }
+  },
+  {
+    "id": "thu",
+    "repo": "THUYRan/Legal-Skills-Chinese",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "publisher": "个人",
+    "author": "THUYRan",
+    "identity": "项目称由法律专业人员编写；首页未提供可逐项核对的作者名单。",
+    "evidence": "https://github.com/THUYRan/Legal-Skills-Chinese",
+    "license": "CC BY-NC-ND 4.0",
+    "name": "Legal-Skills-Chinese",
+    "counts": {
+      "repo": "THUYRan/Legal-Skills-Chinese",
+      "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+      "skills": 38,
+      "scanned": 38,
+      "plugins": 0
+    }
+  }
+]

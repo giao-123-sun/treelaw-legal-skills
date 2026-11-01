@@ -1,4 +1,4 @@
-"""Download three licensed, fixed-commit upstream archives; never run their code."""
+"""Download licensed, fixed-commit upstream archives; never run their code."""
 import hashlib
 import io
 import json
@@ -9,7 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]
 SOURCES=[
  ('China/panrui','pa1nrui1/legal-skills','5e39b9c30cc66ece89ff64cdafbeddde80c6b507','MIT'),
  ('China/senry-prompts','SenryLee/legal-prompts','79f87ad95498ab5d56ba8022251f795546399868','MIT'),
- ('US/anthropic-legal','anthropics/claude-for-legal','4a6c651889c97cc9140580363c73e0eb17379c2b','Apache-2.0')]
+ ('US/anthropic-legal','anthropics/claude-for-legal','4a6c651889c97cc9140580363c73e0eb17379c2b','Apache-2.0'),
+ ('Others/l0cka-legal','l0cka/legal-skills','f61cb01535dc389ae6a4374c7485667d993089b5','MIT')]
 manifest=[]
 for dest,repo,commit,license in SOURCES:
     folder=ROOT/dest

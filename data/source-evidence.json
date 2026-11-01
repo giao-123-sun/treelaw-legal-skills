@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "panrui-5b971a47ac9f",
+    "source": "panrui",
+    "path": "skills/legal/law-to-markdown/SKILL.md",
+    "sha256": "ab4b27ef5c1627b27a727adaecc30437010debe8c566a42655e9400b3f8a1449",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-defdbfff7a72",
+    "source": "panrui",
+    "path": "skills/legal/一审阶段辩护/SKILL.md",
+    "sha256": "5b5b06d1bc6fabdcb2225fb8b8e2229d255e0be05cd440e4eeebed9baa391751",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-b8c0297855a9",
+    "source": "panrui",
+    "path": "skills/legal/二审阶段辩护/SKILL.md",
+    "sha256": "6c4e2689cb79d07060f3c33e77af7fd3afc5d9266efa63bbc68dab85cfe00d6b",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-79a370a8e34b",
+    "source": "panrui",
+    "path": "skills/legal/产品法务/SKILL.md",
+    "sha256": "43a024aa1f10b0a4b143d0df2005060213f73dc445faf9f390ffa62005e43821",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-6af5afdf6833",
+    "source": "panrui",
+    "path": "skills/legal/侦查阶段辩护/SKILL.md",
+    "sha256": "20aedf3c66325dd88dfb6158de12441a6bf3329eece0bf76be4faa3ad8b8b0c3",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-044d3a12d830",
+    "source": "panrui",
+    "path": "skills/legal/债权人会议/SKILL.md",
+    "sha256": "16c4df4647471750e8c72a793432f114e925a92b142a6cba066b8d417019697c",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-8b04ff60e161",
+    "source": "panrui",
+    "path": "skills/legal/债权申报与审查/SKILL.md",
+    "sha256": "423883701b331f7c95f173da33b6c5794e18d91900b018cc1eb8a950dfe15f00",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-612530819c5a",
+    "source": "panrui",
+    "path": "skills/legal/初步法律分析/SKILL.md",
+    "sha256": "13ba29734f5ffa76c23a54fe7dd820a062b2c6a4413df2b66d794af712cc9200",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-9cd9cbeb2529",
+    "source": "panrui",
+    "path": "skills/legal/劳动争议仲裁程序管理/SKILL.md",
+    "sha256": "d8e8d3cc2957a41f4eccefc188f4f9b1f80946191d959c06a9b495461832561f",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-f567850d3f56",
+    "source": "panrui",
+    "path": "skills/legal/劳动争议证据体系/SKILL.md",
+    "sha256": "7e601d249c63375a73916d90447b902e83648e61814dddb4cd82683f63602d37",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-b975740649e0",
+    "source": "panrui",
+    "path": "skills/legal/劳动争议诉讼/SKILL.md",
+    "sha256": "96e03e2f5b715005514bdbb91f25890846414232a0e5ae1420c49ea47597f23a",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-523b793e1194",
+    "source": "panrui",
+    "path": "skills/legal/劳动关系认定与经济补偿计算/SKILL.md",
+    "sha256": "bcf9b1dbdee2a95a4b35d400d51aa224d2c63c5439ffa5622de022d93c0b3581",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-9f7b2422e1c0",
+    "source": "panrui",
+    "path": "skills/legal/合同审查/SKILL.md",
+    "sha256": "b08e0949eac389f967ea7341de338b1b9c586c390d053e626215047104163bf6",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-fb029350d13d",
+    "source": "panrui",
+    "path": "skills/legal/合同起草/SKILL.md",
+    "sha256": "37bb33532a9e3e9d86303cdd4571e888a9e8cad885bc29380e8257d6ea0224c9",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-db78c27ea215",
+    "source": "panrui",
+    "path": "skills/legal/委托合同管理/SKILL.md",
+    "sha256": "cb5cf035c5c3017368b77235f6aa5c8f787fa57ed4bb8850af4605f12bf688d4",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-8c789a3a604e",
+    "source": "panrui",
+    "path": "skills/legal/审查起诉阶段辩护/SKILL.md",
+    "sha256": "12c965b113796aa682df9a54c319d5188771fb8cdcbdbe704e643893e940f32f",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-668e069c2793",
+    "source": "panrui",
+    "path": "skills/legal/审理报告/SKILL.md",
+    "sha256": "099905abec845c967532ea97f69b4570908885e62be17cad77b6f0188ecace66",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-dd2c11ca2844",
+    "source": "panrui",
+    "path": "skills/legal/广告合规审核/SKILL.md",
+    "sha256": "e9271629b93aab5277a663a5527aaf6255088e1910c23cd0bc6b2ff119fad9c0",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-182b7abdbd7f",
+    "source": "panrui",
+    "path": "skills/legal/庭前准备/SKILL.md",
+    "sha256": "b346095f908832099f384b2fe144a5fda0798f02e62c7d00e85c43d7d7a5b347",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-2c31a60df980",
+    "source": "panrui",
+    "path": "skills/legal/庭审与庭后工作/SKILL.md",
+    "sha256": "2dcc7be25cdfa110a4a86e96fc8d6103c20c3960d7ee2d727a022530a365ae4a",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-41275509f23f",
+    "source": "panrui",
+    "path": "skills/legal/未成年人案件/SKILL.md",
+    "sha256": "8bad9e6f99872c6ebe233d569350506294a59d4574f5684d1ff52a42540a758d",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-8e78d6950dd2",
+    "source": "panrui",
+    "path": "skills/legal/案件承接与委托/SKILL.md",
+    "sha256": "97004c9a4b58f63290b99bffe8bfe7bf1be7e9beaf8398250e15d476cfe4b097",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-c9b4aedfb518",
+    "source": "panrui",
+    "path": "skills/legal/案件材料生成专业文档/SKILL.md",
+    "sha256": "3de8cd2cedcd713a036f189cd72b61ed788be300dd18e39f4a0cdeea1c936536",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-69909596ef5d",
+    "source": "panrui",
+    "path": "skills/legal/案件沟通记录/SKILL.md",
+    "sha256": "496d4f2e69455e412349c47778019917489bcd48f4854cedec5b576ddfded7b4",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-70c5c23e9c83",
+    "source": "panrui",
+    "path": "skills/legal/案件讨论与提纲/SKILL.md",
+    "sha256": "aebc7ec84c12d11feb1cb2a4277a9f5bcc9c80e09e5bcb24864a50215198a6de",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-db08f8b3c7d7",
+    "source": "panrui",
+    "path": "skills/legal/死刑案件/SKILL.md",
+    "sha256": "ec676d66d82627ccb666d6951118b41d76a8d52a1bebcac897fdf3ee78f3a13e",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-7fd18a3f9afa",
+    "source": "panrui",
+    "path": "skills/legal/民事一审诉讼/SKILL.md",
+    "sha256": "ad0e89e91c5fb00eec780d77bb9600d9e09a7c96c8bdce1dd1172a6802f7016d",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-3632aaeb1b90",
+    "source": "panrui",
+    "path": "skills/legal/民事判决书/SKILL.md",
+    "sha256": "3aa06f0b66b206b434f2fe55abd3ed050a18288fcf715388967fab8cfc40664d",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-ded685bab722",
+    "source": "panrui",
+    "path": "skills/legal/法律Wiki知识库查询/SKILL.md",
+    "sha256": "284d3c79321950d4a33d3de0af8a1457f9ae541f9e0f0fa35cb92643c66646c0",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-7a99fb89eff0",
+    "source": "panrui",
+    "path": "skills/legal/法律咨询助手/SKILL.md",
+    "sha256": "851d011a7b6f21295290716bfd95b9c50bea4977823010ecea1abc08be0fafbe",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-37e330de3ab8",
+    "source": "panrui",
+    "path": "skills/legal/法律文书出稿前审查/SKILL.md",
+    "sha256": "bf640737ced6bd09d7f5cac49a3bb38387c7c82594d09e336caa3b189d59b7f6",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-2c32a0334759",
+    "source": "panrui",
+    "path": "skills/legal/法律文书模板与导出/SKILL.md",
+    "sha256": "d3994b266cea4c25dad48acc81a11171e2f2ef0a3c69b272c34846ffc13ffd6c",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-806a6bdefc7b",
+    "source": "panrui",
+    "path": "skills/legal/法规案例检索/SKILL.md",
+    "sha256": "11d839d840535c59bfb21293ecbfda2fd93c66cbaceb12d3e05841fc5520f844",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-7690fcaea627",
+    "source": "panrui",
+    "path": "skills/legal/特殊程序/SKILL.md",
+    "sha256": "2f11e696480711df5e68d277a1f0c15ce036092db27a399e80896fdb2bc41d4e",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-90f246cf94c2",
+    "source": "panrui",
+    "path": "skills/legal/用人单位劳动合规/SKILL.md",
+    "sha256": "6957c223ba52a79e32b82ef6535fc270e5b8825d6f4d9d7c314435c9ff367d88",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-67a61c33c457",
+    "source": "panrui",
+    "path": "skills/legal/监管合规监测/SKILL.md",
+    "sha256": "ecb28567ee2ffd5d93f1ea48035fde4e362bf1d187bc48b283b1e3eae418a0fe",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-d703c6dbe181",
+    "source": "panrui",
+    "path": "skills/legal/破产和解程序/SKILL.md",
+    "sha256": "dfd4559b31b0bed2ca7318f479a658627fc5a53d8a0e9f94e7e35d28dd158210",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-72a80fe6f518",
+    "source": "panrui",
+    "path": "skills/legal/破产文书生成/SKILL.md",
+    "sha256": "875524ec72e9307c4faf01d27f02f9dc1804c9a37eeaac8627c95c930eca6979",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-d591027dc165",
+    "source": "panrui",
+    "path": "skills/legal/破产法律分析/SKILL.md",
+    "sha256": "181e1b54f061cd89f078d481750c91ff2142387527b7263d0ac613528a418906",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-fc034c73b4d0",
+    "source": "panrui",
+    "path": "skills/legal/破产清算/SKILL.md",
+    "sha256": "630e0effecbdad0902bf71ecbaae6acc3299ec01c22b005accf0bb296c43089b",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-5c1f416a1c77",
+    "source": "panrui",
+    "path": "skills/legal/破产申请与受理/SKILL.md",
+    "sha256": "982e46384d527949e6f3c645f35cfba7efd1ae0065807f6d3f5e0ad97af72745",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-1a9cdd6dd01d",
+    "source": "panrui",
+    "path": "skills/legal/立案管理/SKILL.md",
+    "sha256": "9554cf2490602647955c8b622baf51ff2f19d3328347cb754c64ac9c2246aa74",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-8c1799e0b05c",
+    "source": "panrui",
+    "path": "skills/legal/简易速裁程序/SKILL.md",
+    "sha256": "250de42c526ab67befffa30fabc235335abb9cacb3384a9abd40ee6b6e9d6c3b",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-c2196acc064a",
+    "source": "panrui",
+    "path": "skills/legal/管理人工作/SKILL.md",
+    "sha256": "502c608c014cc91e3e022ea2ae1c18606a3a252dc01bf6c47e7c8d4e7a9fe9ad",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-1616ceff4e22",
+    "source": "panrui",
+    "path": "skills/legal/结案归档/SKILL.md",
+    "sha256": "461d7fd5b5510d533fa821052f0e4e5f016754ebaf0f2c5a8739693da1b7d914",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-fa84d58d3bef",
+    "source": "panrui",
+    "path": "skills/legal/诉讼分析工具/SKILL.md",
+    "sha256": "0bd185c2d237394f6f84e86858d54014bf1e177130cab8ba58102a554e8a1a90",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-716cd8a0b040",
+    "source": "panrui",
+    "path": "skills/legal/诉讼可视化/SKILL.md",
+    "sha256": "06cfbdbe726fe498f53fcb0d121dc63a9a72302e6741701378fb4baaf5796b8c",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-69dd65fb200b",
+    "source": "panrui",
+    "path": "skills/legal/诉讼文书起草/SKILL.md",
+    "sha256": "c250ec78e8b904d23065a802312a5748d25370e9981604dfb69a0b68201c8786",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-4db2bedddc98",
+    "source": "panrui",
+    "path": "skills/legal/诉讼案件管理/SKILL.md",
+    "sha256": "e4da09bdb21917aa865370fa9ed443a3292da167512db761add23f7557aef27b",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-fc1029b70439",
+    "source": "panrui",
+    "path": "skills/legal/调查取证与证据管理/SKILL.md",
+    "sha256": "ad492a216a82a49a500b731f834897c1be9cdd926038ddd63659ead93503c67e",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-7272110d1c1e",
+    "source": "panrui",
+    "path": "skills/legal/调解与和解/SKILL.md",
+    "sha256": "837ccf45d3e4e9761ce841737ed85f61ccc2b59ec5993f23ed6c3c37410b7d0c",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-36fef4d0269a",
+    "source": "panrui",
+    "path": "skills/legal/财产调查与管理/SKILL.md",
+    "sha256": "7f853083ddd659173804552a22d57e8a34422262c1c0676380982f2f33712a93",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-036caa2dd87c",
+    "source": "panrui",
+    "path": "skills/legal/重整程序/SKILL.md",
+    "sha256": "2088407cb5444d34bc51598dcc7273aee31bdd75fce6251aa2dcb8c3900d487d",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-7b72d5b252e6",
+    "source": "panrui",
+    "path": "skills/legal/预包装食品标签合规/SKILL.md",
+    "sha256": "53bfd7823719b32943871c67d8d0eba5cc41ec91eea6ccc27a8e820626b50ff7",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "panrui-plugin-legal-skills",
+    "source": "panrui",
+    "path": ".codex-plugin/plugin.json",
+    "sha256": "cc5eaa34e109c7ea8d43b1f05b07e0869b56ba72ecd86d0446f0a068e0945504",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b39437618940",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/ai-inventory/SKILL.md",
+    "sha256": "120267d371a5487e396dc25ecf6241d586069ea8afeb6293793cd2aa01ba83d0",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1583414cd6ba",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/aia-generation/SKILL.md",
+    "sha256": "d16e217a772a14541589d3b6affec758c3abe53d2cb7ced9ee2a6a65a9db0089",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-7dcbb01745ff",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/policy-monitor/SKILL.md",
+    "sha256": "76c8af655c05289b47564a28c92f83412e11774f62cd2735fe4d0a912dac02b3",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-e88518d495c3",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/policy-starter/SKILL.md",
+    "sha256": "3c31c4ffd95ab493813911498c43a1e8f623a568cc3d43f29ce53f132a77560b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-972412f66123",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/reg-gap-analysis/SKILL.md",
+    "sha256": "a04f5e78fe5bf44180e5aed53dc5ddb008e07bb316892f3ee5ec4e85b1b11ac8",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-236e143422a7",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/use-case-triage/SKILL.md",
+    "sha256": "6e39c5f8782932f608bbad9fa41a041c44a28cb6e4cacb251bf9d6a0a4ff044d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ebb4d8bad50c",
+    "source": "anthropic",
+    "path": "ai-governance-legal/skills/vendor-ai-review/SKILL.md",
+    "sha256": "32506aea8fba97213f305f487445736960b381357305dd88c4d2c0ca6a5daade",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-d29867795329",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/amendment-history/SKILL.md",
+    "sha256": "99ab56dec5bdb97a2d3f0f1dde2ea46283ec9827a72b8025471acb5be3aa3bf7",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-3754efe2859c",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/escalation-flagger/SKILL.md",
+    "sha256": "34e626fde3c6dd451ddfffd8e8f75d10f5f61a0f2175a04c4a935b41005a843b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b7432d4dc09a",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/nda-review/SKILL.md",
+    "sha256": "9e5f5b79311885bd1e2a8a146a344f1700e49e918a789173e076ad59f7c8b29c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-48c481bc3c2d",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/renewal-tracker/SKILL.md",
+    "sha256": "df97d216295ae11a42fb7f040e57900d35a9ca2fb667319cc774f85940654e42",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-3d94880aeea7",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/review-proposals/SKILL.md",
+    "sha256": "3f015ac11b31d888390ab5cc8c4b168219b70ca5fa9e0001e956eaac38b71bd0",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-8f594ba20383",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/review/SKILL.md",
+    "sha256": "fe06bf41a1945da79c4c2749f7aba2415f956a17ae91faa64c01fb6e3a1fd711",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-46b24a08507e",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/saas-msa-review/SKILL.md",
+    "sha256": "f1663b3621c7b18040d793500dc7b3d65bfcee69d52415e89c61473950dd7fdb",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-14853528cba6",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/stakeholder-summary/SKILL.md",
+    "sha256": "c9302b4e7cf10916aec8a942897ba742385c86095de42de267aabfbf975e4604",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-53661edfd37f",
+    "source": "anthropic",
+    "path": "commercial-legal/skills/vendor-agreement-review/SKILL.md",
+    "sha256": "d26de70c87fe7061fd4832ced5bce2c90ea078abe3f9d3a9982ed09a48c0d0e4",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-4d943d153fc6",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/board-minutes/SKILL.md",
+    "sha256": "ee6b8e46d1fb9a8e893f0a0128b40af637e2edb80ae2cdfafd0de778c2997b50",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-44b310fdc4d8",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/closing-checklist/SKILL.md",
+    "sha256": "d35261d9b054d3d1b6527e69ab7e2a15d434c64e2addda8b4ef375e5e12a0fb4",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1f2006bfb962",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/deal-team-summary/SKILL.md",
+    "sha256": "58f5158fc256568694e86cd422ae025f62fff3ee4488e8ac20273234bf62b599",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-84ace007411a",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/diligence-issue-extraction/SKILL.md",
+    "sha256": "3150d1643035397e387fbeb1025000916029f0d8aea9b653573f3db35f4d4402",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-cfbe91aeff2e",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/entity-compliance/SKILL.md",
+    "sha256": "fb1e16f9bc4212927ed2d78c6ba2e17c33a541e1e6aab38919a167f94def3ad5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-007eeb2b8ae6",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/integration-management/SKILL.md",
+    "sha256": "f4ec82dc6358981c0f29e5bdb4dbe720cf8fc1c487a7597a31d21c9b7c2bf824",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-a3f08710671a",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/material-contract-schedule/SKILL.md",
+    "sha256": "290490afc2ca73e881efa40e9e67e7f6594345b23d1490381a45bdf6de41834f",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-d47b4d27f2f5",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/tabular-review/SKILL.md",
+    "sha256": "529e3745cc982cdd2e55cc988c1c460a1051757e418ce980f29337c578cd3465",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ff9bcd9cde35",
+    "source": "anthropic",
+    "path": "corporate-legal/skills/written-consent/SKILL.md",
+    "sha256": "8307570898366ef06ddbac785dfb41110cd96d9171903ec4ccfb79080503120b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-f109c346efb6",
+    "source": "anthropic",
+    "path": "employment-legal/skills/expansion-kickoff/SKILL.md",
+    "sha256": "5b66377c3525369003d28c8e0d0621ded488d4b7e2b47d42d9380cceacc694a1",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-a7143440e77e",
+    "source": "anthropic",
+    "path": "employment-legal/skills/expansion-update/SKILL.md",
+    "sha256": "5c6d2210741a31faa783de436758686ea368456bf1ba478cc6b8518709655cc0",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-cc8d05631de5",
+    "source": "anthropic",
+    "path": "employment-legal/skills/handbook-updates/SKILL.md",
+    "sha256": "9aba9e41ebd9c2629570861ceaa95167a1eead8660c8bb049f3262c17a68c46b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-a35947a1c21a",
+    "source": "anthropic",
+    "path": "employment-legal/skills/hiring-review/SKILL.md",
+    "sha256": "d33f29a791a9f98ac377b395091414c8f8cba0035762d6796afa0153a7a0e300",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b90f2776f0b5",
+    "source": "anthropic",
+    "path": "employment-legal/skills/internal-investigation/SKILL.md",
+    "sha256": "7562218907241bd6a3fe641cbb4313554fcfb37dcf70f9bf51f14669b2ca9b21",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b434a5bf2b1b",
+    "source": "anthropic",
+    "path": "employment-legal/skills/international-expansion/SKILL.md",
+    "sha256": "1e0bc6c48731a9a90ecf152bb361710f810b85a9ff1f728db43536c8e9711e60",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1aa03fe3fd07",
+    "source": "anthropic",
+    "path": "employment-legal/skills/investigation-add/SKILL.md",
+    "sha256": "946fc5f8597b19608e2aa98be627b4f658f8eb6520eb16ed3db00c4dc29ed61a",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-331dd50f39c8",
+    "source": "anthropic",
+    "path": "employment-legal/skills/investigation-memo/SKILL.md",
+    "sha256": "7b77d9b79637765da148158c7c5b870c73e81479c9722d9dae8b9e9788608d06",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ec1a96cf2b4c",
+    "source": "anthropic",
+    "path": "employment-legal/skills/investigation-open/SKILL.md",
+    "sha256": "045273a59fc2c9b0fc904f0a9ec42fd8a2da75da55e527495b15c787c524b4e5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-dd9a839c0051",
+    "source": "anthropic",
+    "path": "employment-legal/skills/investigation-query/SKILL.md",
+    "sha256": "8e6374cd86f3aa07dfa463159799ccda15a9c9747b48e7bf13aca8b09d56244a",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-efafa742e984",
+    "source": "anthropic",
+    "path": "employment-legal/skills/investigation-summary/SKILL.md",
+    "sha256": "2396272e131bdab8c9b28dec31197714e62b7f1462e24122151576de77accb40",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-409471f96a97",
+    "source": "anthropic",
+    "path": "employment-legal/skills/leave-tracker/SKILL.md",
+    "sha256": "a167c33192bf7bdec9f0ff01b43800574e4850f862c3c5f8ccc20fcb76d1212d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-58cacf7ba1b4",
+    "source": "anthropic",
+    "path": "employment-legal/skills/log-leave/SKILL.md",
+    "sha256": "8d2b8a8b92d8b54988db303c1a772e1afddc41ea42f18ef60665a1598e6fba98",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b5c3e407954a",
+    "source": "anthropic",
+    "path": "employment-legal/skills/policy-drafting/SKILL.md",
+    "sha256": "01054a67b55f8a471a6bef6bd933caaf336018fe5f3409b98d2022ffcdbbd200",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-f93d19ece94e",
+    "source": "anthropic",
+    "path": "employment-legal/skills/termination-review/SKILL.md",
+    "sha256": "4a8ff94e67e342026d196f3dea4582f3c45cea903c62a69325afe399db550eaf",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-cac41a185abc",
+    "source": "anthropic",
+    "path": "employment-legal/skills/wage-hour-qa/SKILL.md",
+    "sha256": "2fc5a48aa2c15d84ecc569f519ae933307316a90a90bfba3938cef31f0227436",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ab74c588212b",
+    "source": "anthropic",
+    "path": "employment-legal/skills/worker-classification/SKILL.md",
+    "sha256": "32705d51cfae961aa1b795bf22dc03a92a9dff07c024f8c3bdef00977783ba92",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ed104eb025a1",
+    "source": "anthropic",
+    "path": "ip-legal/skills/cease-desist/SKILL.md",
+    "sha256": "2db21171dbdafd976c4096a2f5c179a47a8da5364b886515967d7b677d3bdf76",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-11ba4400dd1a",
+    "source": "anthropic",
+    "path": "ip-legal/skills/clearance/SKILL.md",
+    "sha256": "e6bf240418e3bca6e5692213205eb36e739dd8eebe40d2acf2ef51aab53693d6",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-2599a932b362",
+    "source": "anthropic",
+    "path": "ip-legal/skills/fto-triage/SKILL.md",
+    "sha256": "3d13699dfe424caaad0c619c9424339d0c81a9b43b0224325d213e403e6f011a",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-aa38cc2c7a12",
+    "source": "anthropic",
+    "path": "ip-legal/skills/infringement-triage/SKILL.md",
+    "sha256": "aaa94be7dfd2f11c039f8306e08ec0f685342c9708804caa4c79cb3d0fbcb3e5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-839a6a579cf0",
+    "source": "anthropic",
+    "path": "ip-legal/skills/invention-intake/SKILL.md",
+    "sha256": "beb7db467fd4383d4d8cb69ce53cdf8c1f01ff07c61318ff231fe59669e287f4",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-7eb11b392cad",
+    "source": "anthropic",
+    "path": "ip-legal/skills/ip-clause-review/SKILL.md",
+    "sha256": "d6a5849fe99ded4fe11752025e2a46732a49a700d9d0c42dc7a6e992da5fd8ec",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-722887e01018",
+    "source": "anthropic",
+    "path": "ip-legal/skills/oss-review/SKILL.md",
+    "sha256": "971236477a3b4b7984a2f38858e71be1b1dbbc97b11382ee90a8f4f5c3150e9b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c87c2cddd055",
+    "source": "anthropic",
+    "path": "ip-legal/skills/portfolio/SKILL.md",
+    "sha256": "1cfe39fde91eba6873458b8aa9a2a5d09409970e7accea1f167ee27cf081888d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c535384d2690",
+    "source": "anthropic",
+    "path": "ip-legal/skills/takedown/SKILL.md",
+    "sha256": "250e80dce35412aac0506ed7a697149dbb7aa05f80b4092434108208345c82a6",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-692a86c9424f",
+    "source": "anthropic",
+    "path": "law-student/skills/bar-prep-questions/SKILL.md",
+    "sha256": "c5b44347ad7d35c3642efe1485cd08b6e01401245839efd9f67b070e64c87953",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-cf55b8a0db0f",
+    "source": "anthropic",
+    "path": "law-student/skills/case-brief/SKILL.md",
+    "sha256": "51667ab84e4eea2b498916f958c64485f4b4c71f8c7d4660dbabe3f78e28b7d9",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-e5520cadb31e",
+    "source": "anthropic",
+    "path": "law-student/skills/cold-call-prep/SKILL.md",
+    "sha256": "7883e8cf2b55eb6e23ce896efefd7e2fc0808925b06aa949b75c1bb1273ec777",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b1ce4fc90a77",
+    "source": "anthropic",
+    "path": "law-student/skills/exam-forecast/SKILL.md",
+    "sha256": "3ac5e7a8475655ba941740bc80a2b8eca716ca1524a4840981f69e34d3dc279e",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-a1bd9b591793",
+    "source": "anthropic",
+    "path": "law-student/skills/flashcards/SKILL.md",
+    "sha256": "54eb961a0ff4a24208c0c3c8abef82890ee10732bb5dd22950283fe1f04318e8",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-07d35e9db38a",
+    "source": "anthropic",
+    "path": "law-student/skills/irac-practice/SKILL.md",
+    "sha256": "644e532977bea2ff07f25b2350fd744cfdf74ec3018788779c7ec4f7fd83dc81",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-29c8b9268100",
+    "source": "anthropic",
+    "path": "law-student/skills/legal-writing/SKILL.md",
+    "sha256": "33efcc074a4857288c8ad0e6ceff3eae56839b9fb0888fef9ae32839d81f0313",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-16fb880f856b",
+    "source": "anthropic",
+    "path": "law-student/skills/outline-builder/SKILL.md",
+    "sha256": "07a33998e49bd06973c8ee82bfaebbb1532563b5e7ed89932c8a5d502665cc59",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-9e04e27e4382",
+    "source": "anthropic",
+    "path": "law-student/skills/socratic-drill/SKILL.md",
+    "sha256": "f72b928adb1b08482dbc946e39b871620020924c56788cb21e93d610db7f857b",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-69aa4fbfe1d4",
+    "source": "anthropic",
+    "path": "law-student/skills/study-plan/SKILL.md",
+    "sha256": "820ff83c1a1d2dfa67a5a7d71a00e09931dfc98c1c9a4877284fc1d213ca33eb",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ee2ac86ca6b7",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/build-guide/SKILL.md",
+    "sha256": "df13c3ee9012918de0df3594e42fdbf06c236341d91ac443afe832c3ed086ea9",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c4086e2a3c05",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/client-comms-log/SKILL.md",
+    "sha256": "6da1c6f9af1fc8169d047859dda12ceb80defcb54c22f1ef4a1474902e61ef1c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-fb55857d49ca",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/client-intake/SKILL.md",
+    "sha256": "6b18b9b583b5cc58fb9b9b8fac2190425d2ea0f2c1b6b2e1a6efd941862c8ac3",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-47d14f8a2a9c",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/client-letter/SKILL.md",
+    "sha256": "3506b4ac466faa3a5f09c350bf6cbc6f095b29a31ac6e57138766dd15ea4c0f7",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-18418e63ed27",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/deadlines/SKILL.md",
+    "sha256": "8293bc458a41092024704b2d28bdca4381395669be55a7a0bd3af85f9bf44516",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-24b07eb9c5cc",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/draft/SKILL.md",
+    "sha256": "736121dd51495fe62543abf34eb05fd526d65c2ebf6a275dea3c56c47ee5e203",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-3e345574cd56",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/form-generation/SKILL.md",
+    "sha256": "ad63fe70bffb51935bb534ebf50e9ac40eab7b8d24a8c53b1113855b4963806a",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-23b8855fb0eb",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/memo/SKILL.md",
+    "sha256": "85c6d7724a1c7045b1a4db147c6a2251e8722b8be99c283b120590dc8f039dd0",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-046f043c325e",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/plain-language-letters/SKILL.md",
+    "sha256": "4cc6985e0c45bce0de3e4dc1b47d5784528ff33704b5da86fae08ab9cbca0b44",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-d76566e53723",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/ramp/SKILL.md",
+    "sha256": "2d303fc38def12ae43e20c7dd01d564af566419eed4351b52154a4bf2a618ba2",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c2c6a8d44448",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/research-start/SKILL.md",
+    "sha256": "4e350fb99c7e6024d49172c7fce0cee3046b48f46d94f38884db27ca5d7c628c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-8468668e0067",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/semester-handoff/SKILL.md",
+    "sha256": "5ed23dd5192abe3f21270628ccafdc5b5f12de296341af7b827f618ea2e5ab7e",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-f6a534517fac",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/status/SKILL.md",
+    "sha256": "98770b125d4baf72bcb78d0efb6be1e853339ac2f4850294794884e725ec8eb2",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-95d1ecc5bc25",
+    "source": "anthropic",
+    "path": "legal-clinic/skills/supervisor-review-queue/SKILL.md",
+    "sha256": "e53fcc75bb6b0ba58b2dcc5c181407b36ab3a3ba894b8e21c94eef261c001e37",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-17e9cc5e5010",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/brief-section-drafter/SKILL.md",
+    "sha256": "6aef47de453d22dd67961fcb3de5c6f4e2839400cdfd5675020ca79ea85c2931",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-faee3178a29c",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/chronology/SKILL.md",
+    "sha256": "f6b4df4a170fb33ea844aff951b6d6e40780d07d6fb592cd08596825e71d12f5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-9c5283141a46",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/claim-chart/SKILL.md",
+    "sha256": "8feb5f0199312069cf4d7a072689fb404f23f6a2769e2be8c22b270e9ff6b667",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-360ffa59712b",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/demand-draft/SKILL.md",
+    "sha256": "0429230c1f8328b21d489bbd3fb8d7a95dc605839d18b74f85b0f94ec73a5126",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-9e1a121773bf",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/demand-intake/SKILL.md",
+    "sha256": "e3e76e58aba2feec5790db0b8545fa4a7a829216d397f6320946058668180f35",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-81ca2102e2b6",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/demand-received/SKILL.md",
+    "sha256": "f935cf45e84dcfdb729857fc47c6665de37ab49e12e8e571a6f1d1add1260538",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-b8ecc96c27ba",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/deposition-prep/SKILL.md",
+    "sha256": "cd4a33b7681c51f841d2d7928836c98f450feaf35d92022a6f4b855cad3a3670",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-372667453f0f",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/legal-hold/SKILL.md",
+    "sha256": "42fba13560455477f525e70fcf53153246cb69d5cad88b72951971b52c66a082",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-163b76e8f291",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/matter-briefing/SKILL.md",
+    "sha256": "d76405176522b8f70e4b03fac700dfa6a1b1080defe9d8ae63b26505c515f4c1",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-d06521f3dfd7",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/matter-close/SKILL.md",
+    "sha256": "545801921f2ccf4f53929166d6228e197d7d2db28797132c86060f97c6a5a356",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-831ba8667128",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/matter-intake/SKILL.md",
+    "sha256": "2c22915af32cf3465ba8fe6fe9586b88b1399dbe75fe06a5eef46217cebc4fde",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1525ab439ddc",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/matter-update/SKILL.md",
+    "sha256": "5bfd800c13fa394af9e6ee75162d9204722e3fc01e2ef1c53f9f6aa885948ea1",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-407706901503",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/oc-status/SKILL.md",
+    "sha256": "931dac8dca4f8bf7f65942cb444202940efe0fcdac57e8d80d5261e88c4d855c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-efebcb2982d4",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/portfolio-status/SKILL.md",
+    "sha256": "e674693c5991668fedcc06306115a21760d088aab4b336334d604b7d4a6e3d70",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-26e3b9331a43",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/privilege-log-review/SKILL.md",
+    "sha256": "94f6acc40449eabaf1399b9a1907cef10df99e7708462e497e51470b5c620964",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-f1ccf689ac4f",
+    "source": "anthropic",
+    "path": "litigation-legal/skills/subpoena-triage/SKILL.md",
+    "sha256": "fee66a5dd5c5145fe27dfdaf0f135bf97d6ae6da280555c84ed45a87e30302e1",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c2cb6db523b5",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/dpa-review/SKILL.md",
+    "sha256": "a6d829d03ae4c89ae88042fc2aaa8de8147fc40d2898d63219cc0b92e9124af9",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-31fae153d07e",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/dsar-response/SKILL.md",
+    "sha256": "918ad36ab536e0650f2b8770eba3bd6a7fb991a0ca124f19f0798d0ce2734457",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c8423787373b",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/pia-generation/SKILL.md",
+    "sha256": "e3dc1b30460293f6d842de1fc3441f14fb091ed02427d1f5c527132859adf51d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-9e37335805f9",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/policy-monitor/SKILL.md",
+    "sha256": "b6dd8c75ee2214ac0415caeb2badd5471d1ad7ae22b9e319672e552e52d9dd35",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-6a008c86773a",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/reg-gap-analysis/SKILL.md",
+    "sha256": "501b2f130f0d6cf6de9e11fc394f22909429c93e11bc9e23fd95a0616f60307a",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-8a49786f743d",
+    "source": "anthropic",
+    "path": "privacy-legal/skills/use-case-triage/SKILL.md",
+    "sha256": "7aa94e9108941b9ad6a6dacb6fb045da31ae70de7bf8d13394e5125825e74988",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1ecfa89272e6",
+    "source": "anthropic",
+    "path": "product-legal/skills/feature-risk-assessment/SKILL.md",
+    "sha256": "90ebbc0ddffe78a2952b3050368bfe66fd21273dc739dda04f89b36917503048",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-c42991c5e9c1",
+    "source": "anthropic",
+    "path": "product-legal/skills/is-this-a-problem/SKILL.md",
+    "sha256": "bf05c5ae3a9113b3d46f01f26577495bf27d23382dbd1471fa7f7550e385cb00",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1105a35d0e09",
+    "source": "anthropic",
+    "path": "product-legal/skills/launch-review/SKILL.md",
+    "sha256": "25ecd7e900538cacc14a8d6e3374210053d16a694ef29f67f69281088fe181f1",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-1de3d47aaeec",
+    "source": "anthropic",
+    "path": "product-legal/skills/marketing-claims-review/SKILL.md",
+    "sha256": "6c310b3adcdc2fdfcc7c7fa632638e12a62ef8e68896bfea18ad79a764b21769",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-10176385b419",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/comments/SKILL.md",
+    "sha256": "1df74c71c0ef8068e8c397596af0e61ce4a52be0cfb1b49ab63345c6252cb5a2",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-2898bf81524e",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/gap-surfacer/SKILL.md",
+    "sha256": "56fc5441d1401d5ff21f9ccdf0e200341b823d26f8304dfd310dd0b89f706d3e",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-9815d30943d3",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/gaps/SKILL.md",
+    "sha256": "e09c5f49418ff1bbee787de3b77b925091188efdfedd9608d18a05db5af52e6c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-667a82d6c888",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/policy-diff/SKILL.md",
+    "sha256": "01c2c516b4a99d1f9f64a1df3579bd50ab489b192416f2d4cd6957ebc4c200a5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-ad52d7d339e4",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/policy-redraft/SKILL.md",
+    "sha256": "c354b0323ba50af4e1024bfda49fd88bcad9466f2abbef170d58e40aab711f3d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-bb704af2d83c",
+    "source": "anthropic",
+    "path": "regulatory-legal/skills/reg-feed-watcher/SKILL.md",
+    "sha256": "db349c5fd51c0fd73347ca7369de4de805f16ebc9bf12f830c8dd17cbeb67744",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-ai-governance-legal",
+    "source": "anthropic",
+    "path": "ai-governance-legal/.claude-plugin/plugin.json",
+    "sha256": "0f1aa04869d2560774bab00247bcd7b16fe653b4ba5a0072832f1bff45f0d7cf",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-commercial-legal",
+    "source": "anthropic",
+    "path": "commercial-legal/.claude-plugin/plugin.json",
+    "sha256": "4bfd4a51d175635b1b60e7714f7f010259f0321041003150f407413ec635029e",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-corporate-legal",
+    "source": "anthropic",
+    "path": "corporate-legal/.claude-plugin/plugin.json",
+    "sha256": "081d7ad51704cf4348aeb6af57ff862ce2c90976bf21df307364af8f0d704ec9",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-employment-legal",
+    "source": "anthropic",
+    "path": "employment-legal/.claude-plugin/plugin.json",
+    "sha256": "eb814fadf1cb5675f6bd4b630a5de80c982a05d21a923f45c0831c5182411b59",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-ip-legal",
+    "source": "anthropic",
+    "path": "ip-legal/.claude-plugin/plugin.json",
+    "sha256": "9dcdaaaaf2937d7b1a35b575ae0c12b4eda3194f21d72b8f7766cd618bfb7c93",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-law-student",
+    "source": "anthropic",
+    "path": "law-student/.claude-plugin/plugin.json",
+    "sha256": "11bd1429d29cb4ee7510604494ac1a6cfe2e60622837093cf13f9a5b552dcb0e",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-legal-clinic",
+    "source": "anthropic",
+    "path": "legal-clinic/.claude-plugin/plugin.json",
+    "sha256": "786be9c118051ea019876fc5e130e2b0b00456f23350d2a9f9ab253783ef2d15",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-litigation-legal",
+    "source": "anthropic",
+    "path": "litigation-legal/.claude-plugin/plugin.json",
+    "sha256": "8aca8bfbd4d00c76bffbabfb8167196f2bad0352c68429f9dbec7bd943a6467d",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-privacy-legal",
+    "source": "anthropic",
+    "path": "privacy-legal/.claude-plugin/plugin.json",
+    "sha256": "c12ffe155a32fd79d1020759b29e55fda1b9872d8dfa8f58829b48645ce4efcf",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-product-legal",
+    "source": "anthropic",
+    "path": "product-legal/.claude-plugin/plugin.json",
+    "sha256": "2b1670021563036be5214503fa124141a4f3fa8fa3da59c57f9d16e71b03c2a5",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "anthropic-plugin-regulatory-legal",
+    "source": "anthropic",
+    "path": "regulatory-legal/.claude-plugin/plugin.json",
+    "sha256": "85a936004efa5d6b73e58d3564275a8840f7b1f46fa050c91438800c7f50f41c",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-53adde4be8ff",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assemble-nsw-estate-documents/SKILL.md",
+    "sha256": "a283254c27f1db34c446941669871c962decc3c5d1316a72bcef13d32b1807a1",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-61655e94ae90",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assemble-qld-estate-documents/SKILL.md",
+    "sha256": "e7bfa669feb88c817ea056c284c524316f448d761a9c56ba1ac9c6e4b3135016",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-bab12fb3349f",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assemble-vic-estate-documents/SKILL.md",
+    "sha256": "1b76b593339043dc5389b48c14e9444bb23ae1fa8fa9cd44b0acc52cb8866ca7",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-63969eee700d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-ai-privacy-cybersecurity-use-case/SKILL.md",
+    "sha256": "fee518b6e55e7b602dece035e968efee483920bf0310472214cd50a71300bbba",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-8a7fbb23592e",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-australian-data-breach/SKILL.md",
+    "sha256": "7bb4b1d20cfa910525b3ed6c764be65d8baa40881fc6dcdd461334978b808a46",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-007de15659b6",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-australian-privacy-issues/SKILL.md",
+    "sha256": "1660267f36930d9d03a6bd819da846087055ae8fa2609e2618a9dc0081d5c353",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-2709a085f34d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-automated-decision-transparency/SKILL.md",
+    "sha256": "026b71385a378df0b55b3d324b7b0fcd8064ea7ba21c29b1a33137aedad71176",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-66ea2f6af83a",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-board-ai-oversight/SKILL.md",
+    "sha256": "72ea7cc0e8324c91ccab2ddb7057629841ca984ecb2abf1f4e98630ea9a22407",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-ab1537c5b583",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-cartel-and-rpm-risk/SKILL.md",
+    "sha256": "125ee00768bf98362261e8cd1921132d4ef8039dd557de76b9a9fb9b804c2f9e",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-6167477c5e56",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-consumer-guarantees/SKILL.md",
+    "sha256": "3db307bbf237388279bf4dc7462f12653a898bdb91e05a2b926192d6d5c438f3",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-da93c620057d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-director-duties-governance/SKILL.md",
+    "sha256": "3c463d9130b7d3d2ae40305952e3ab72abaf525c92d17ebff26b646dbb55abdb",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-8ab319f86f89",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-discrimination-and-positive-duty/SKILL.md",
+    "sha256": "1630fcaa92a22eb611372b5c29c68553df1496283a04f31e65e239bc15320177",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1fc0edee9334",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-employee-vs-contractor/SKILL.md",
+    "sha256": "260d5df8bce84b2d050510f0e598eabd1f3a9405dd9a23e887ec67fd0ac552f4",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-749d346bce76",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-restraint-of-trade/SKILL.md",
+    "sha256": "149dd6391290e8af78b44f0eb87ef402344317b79a2d5213b3f30d07e72d7e79",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-95ff13095eb2",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-statutory-privacy-tort/SKILL.md",
+    "sha256": "18944b4c763f73344234a5074a055f00ae3e364791552ca647e4b8ead27ba0c4",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c6a2739d2db7",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/assess-termination-exposure/SKILL.md",
+    "sha256": "3662ec18ae0bdf770c0e2f8889445ec8d3ca58c984fd21a88d23c8e0ca3e6854",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-4302a5ab32ea",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/build-document-index/SKILL.md",
+    "sha256": "19e7f1b982ac6a5b61a5a5e46622be2856ecfcdde8ca2273b3463736567fa7cf",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-257d266dc66d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/build-evidence-chronology/SKILL.md",
+    "sha256": "95b88a763ae25bb3514468c236f5fb556d4024a051837cb16951983d97d9d91e",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-e3cbde7f88e1",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/build-negotiation-redline-memo/SKILL.md",
+    "sha256": "82b9054e20f1fad5cc4ef8202eb9a521ffb7ef84d6dc2f4e433572b04f63904e",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c70ff070185b",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/build-privilege-log/SKILL.md",
+    "sha256": "e899c527dbe137b61810fd310ccc1d6a3fd6faca867e7a753069afcc4d315256",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-b6b6110183a9",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-act-legislation/SKILL.md",
+    "sha256": "b84f9504473899f463b8e8d0fe1c4b473ef14c35faa577d769f48032ea3730b7",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-5d2c3e3f6c6e",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-ai-guidance-alignment/SKILL.md",
+    "sha256": "db4a8e66503f04fc189d73c235f4bbce27fe8a20c2c0258f33bce7adcdc02464",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1fe8d83596b1",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-australian-privacy-principles/SKILL.md",
+    "sha256": "bb06344e0bcccc93aac3c4df6b0ea8f4cbe1c896e8d8f0325d1e4b9f39f25a77",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-2c00fe878e8d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-commonwealth-legislation/SKILL.md",
+    "sha256": "867c8a5f6cb44f66daedbc296a4729b61390265792b526a27b3af2dc642575ad",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-385032d13ac8",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-northern-territory-legislation/SKILL.md",
+    "sha256": "3869a623ed77fcc7dea39afffed31d0321e70e8890c070df49be55f0f39c1bfa",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-679f334741cc",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-nsw-legislation/SKILL.md",
+    "sha256": "1a2ba9c84fdb2649defbaed40dafbf4e1c52c01541ccef2c992d21314ac2ef90",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-b761b23de863",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-queensland-legislation/SKILL.md",
+    "sha256": "b0c7e211130dc1ad938e9188098a80a78c886d005bae6012d7b457e2972f29f2",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-65287a0da3e8",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-south-australia-legislation/SKILL.md",
+    "sha256": "8ff543a0c312cece7cfe40b02fbb8ce26a711c93c2a087e2eb595411a72fcebe",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-772d9a526c4a",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-tasmania-legislation/SKILL.md",
+    "sha256": "478a195ea4a7a22f71b4608e032ac9d367eda0118bb163023eebdbe6b9f6465e",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-b7dca9a50356",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-unfair-contract-terms/SKILL.md",
+    "sha256": "76a680b07c1d3cf03b77964e5503a69bb8ddfa185c16a057c73e4d5b88d56946",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-71ea1554c9b5",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-victoria-legislation/SKILL.md",
+    "sha256": "1158ffd4dd93bdb0373d3b4a29b6484d3b7697c3eff3cf8887d7f245d4d57adc",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1f3611c63b60",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/check-western-australia-legislation/SKILL.md",
+    "sha256": "755042dbed7484067df4840f53f0d9e01f8fca3dd04665976276f6dfe95fae70",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-3bcd243ebaf5",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/clarify-burden-and-standard/SKILL.md",
+    "sha256": "56af225d46d31749fbfe0d2e15fd524bf06bdc2c84b8485bc0e2cdaf585ae2cc",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c993e1ffe316",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/compute-procedural-deadlines/SKILL.md",
+    "sha256": "b4504e3d24fe297f0720fbc1f37dd50dd0d8d25c9857a52f9a601854192d5a81",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-9d552a61afb0",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/draft-nda/SKILL.md",
+    "sha256": "b58aef9f8bbf39526ef4338e4731cabd7fcbafcdf89de2b7fc6cc78863e25edb",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c2bb90b46760",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/draft-privacy-policy/SKILL.md",
+    "sha256": "337e798f2603556076f642a30bd48a929b5d024396879d91723bcea438dda7dd",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-bd05748366a4",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/draft-services-agreement/SKILL.md",
+    "sha256": "a166ae29dcde06e357706c753aa643ada2c2bea547b8c268dd3361961a189a0f",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1fc254c6902d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/draft-website-terms/SKILL.md",
+    "sha256": "72ceeebdea5992d93b44d74e2e6d1ad903669aa4b889a8d6739103de9c163495",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-6d0af48e5bcb",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/drill-oral-advocacy/SKILL.md",
+    "sha256": "7022e2fdf08d0778edcf565899869e16815b2581a377ec451487582bf047d1f7",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-58d0e9db721e",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/find-blind-spots/SKILL.md",
+    "sha256": "91b94ee9a97b1601932ff86ebe1a82fc42543e4618702ec9a730adf3425b3b7b",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-247f2b547383",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/format-aglc4-citations/SKILL.md",
+    "sha256": "579529e32df8219a9cc9eb17e731efeb4d336689596352de2bae797d1606b66a",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-9c6366ccbb05",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/maintain-corporations-governance-calendar/SKILL.md",
+    "sha256": "b454602a5ab573ec7089dfb03fcdd6af52e7cc08289319ef1805f1f170c6a3a5",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-f7206731c47c",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/maintain-deadline-register/SKILL.md",
+    "sha256": "ca760c1094174c4db7490a9ba2ecea6566dcff54c31ec9b4b28bb4a01f800ba2",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1b034f576793",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-ai-regulatory-obligations/SKILL.md",
+    "sha256": "d516b1e31cf997720bb1ec0f928517549f976bc60b73fc7f3cccea743b812aa9",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-75cbb4becac0",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-assumptions/SKILL.md",
+    "sha256": "caa2a5b909b995a52f04d4048016947d2f8f1c1f6574537e4bf5e304bef6dbf4",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-9bb423d82908",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-australian-cyber-incident-obligations/SKILL.md",
+    "sha256": "c9a1d9a76345fd7debaa43d9f758816a74dfdfae65acbc1c95e7f336941dcfba",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-b5ebd1b2c1c5",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-designated-services/SKILL.md",
+    "sha256": "ea5b78f8cad34324ca58909bf227d7b22ab2ad66ee1320ab307e80c407c12820",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-2f02ffce36f0",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-evidence-inconsistencies/SKILL.md",
+    "sha256": "c836353950683fd0c358a0155d2579ef0b3c668e9e3040bb26fe097803cf3741",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-beb2ce7658df",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-fair-work-obligations/SKILL.md",
+    "sha256": "66ff72a6dd0ab5a828c5590a5c4041ad4eb75302cae3b4ce75a193949e6044fa",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-fccad7169ba2",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-limitation-periods/SKILL.md",
+    "sha256": "79f90b9186ffd428c10b4ccbb345694800be2f5cb43d846b7a65bdff1840bd4b",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-eba4af60d65a",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-merger-notification/SKILL.md",
+    "sha256": "b7cf3232c6333b6a305b69d3926395b2ed3355e0bf8305218bc3ee183be7ad67",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-04e319f612a1",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-product-safety-obligations/SKILL.md",
+    "sha256": "ef67e0dfd97807c781713af0059ad1f5573fcf99cecb448d03399637b7af0706",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-43740c651af7",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-reporting-obligations/SKILL.md",
+    "sha256": "395e403d83f3461923abd0a7433312886b15baa14acb6b8405b82f3ae9cb426e",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-7927480ae022",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/map-tribunal-review-deadlines/SKILL.md",
+    "sha256": "3d6c5130e7ad87ea6860920799d7e09bf5070e7b4da15014acc20b0d5f6d797a",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-7869c6927ebb",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/oppose-as-counsel/SKILL.md",
+    "sha256": "134a31c87894e5eb4de497778cfddcad802bc1682e7b945878972b8d69515543",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-becc7d6e2b46",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/prepare-board-decision-record/SKILL.md",
+    "sha256": "ed76f6a2629c63d3057cbb13082e8750eb2abcd4249d264b58c94b60317e2fe6",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c70ebff61596",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/pressure-test-argument/SKILL.md",
+    "sha256": "7bddd9e4cdef3a55036d3b8e9ce258efa85583f077215a569701a34cff69eb99",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-3b437bcf77ce",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/pressure-test-strategy/SKILL.md",
+    "sha256": "4ef04e27727845ae429ed4e1016c444d351fdfe831401ee6924148af788d9cae",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-2876528bef83",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/red-team-evidence/SKILL.md",
+    "sha256": "83b74359badb0a771e0183f537e9cc553959fd3942b8dd5c537f3e174c67328c",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-677dad45303c",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-aml-ctf-program/SKILL.md",
+    "sha256": "70f4ab070425601414f96d90f4a8513eaa808087baf932781c6a062996ea56be",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-56552b4abe48",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-commercial-agreement/SKILL.md",
+    "sha256": "ef12df9cc80adcca004928997bf8d4cdf9d618ced6d513a5f7b50dc8a7f53fce",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-b8f161451f85",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-corporations-governance-framework/SKILL.md",
+    "sha256": "48400ea378bc43de3f03ead5201b6373e03a2fc57d92456bd71c0983fd027e9b",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-3af081b16f7c",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-draft-against-checklist/SKILL.md",
+    "sha256": "7cf618321149428fa3ee338d0164b0fa1c74850cb73d0a3c3e38baba81389fcf",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-4064bf73f943",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-employment-contract/SKILL.md",
+    "sha256": "2636b728abc3beb8ab9c548ef2cb69983c46930c3a8d814ff0345a4fbc45f116",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-a601af956523",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-limitation-and-indemnity-regime/SKILL.md",
+    "sha256": "a4162022f99addd3e8820ba6a23e68a5734cc8b55e45aa746e81770ebeac8ac9",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-24b21cd94981",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-marketing-claims/SKILL.md",
+    "sha256": "1964eca85697622a338ba4cea45d769aed088faf9300dbc2283bf2b42d70ecbc",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-a6eef3247a5d",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/review-workplace-policy/SKILL.md",
+    "sha256": "12b17dda96816ac5d47e7a95b740faaf9d5705e75be70dc412163a4cf894ec53",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-134412ef4a46",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/role-play-decision-maker/SKILL.md",
+    "sha256": "a2ee5d5f0f231ccf081d2e869b8821c9d6f3cd6a7c255844e978b82d10e61a91",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-bcd47d4ee3b7",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/route-australian-privacy-jurisdiction/SKILL.md",
+    "sha256": "e2906848b18536d060a7cabeb5f532afb79cbda8bd82ab866d77fedb875e4dc0",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-5cb1c84c75c9",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/route-case-citation/SKILL.md",
+    "sha256": "d1705927af7e9851f0cff8fc08d0fa8e7a6c74bdd83782c564315ce12d5fb1b2",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c58d49f5d36b",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/route-legal-fact-pattern/SKILL.md",
+    "sha256": "3ec197ad58ec22ba077bbe98b12de76c98bab089907a84a08bd630fdb515f385",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-736d10a2b71f",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/simplify-without-losing-precision/SKILL.md",
+    "sha256": "6c99a7ffeec7ce52eba7f1f8a4ef36ef88c36c84de161c8e6b5baf90213d3307",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-6317c423a894",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/steelman-then-attack/SKILL.md",
+    "sha256": "8478666e87dcbabe70b5e7f2f4713efd86c77fa62386fa854bafc507d739a3aa",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-2b61c730be3e",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/test-understanding/SKILL.md",
+    "sha256": "d4fb8b38eae360b1070694b7cea2f88aad39d8f1478204fb505b0ed818ba2735",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-f15de5b37535",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/trace-commonwealth-legislative-change/SKILL.md",
+    "sha256": "08e58782d93f5eeebcc357068959d8e349a5af815574777b39be8138de786f94",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-29d7c30cb3e2",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/track-accc-developments/SKILL.md",
+    "sha256": "68071d296dc17648cd9ef8e5a1f1d6f83de471991039682dae22ce8050c2349b",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-1ae4752ec701",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/track-ai-regulatory-developments/SKILL.md",
+    "sha256": "2df0af663cb9a627e48ecdc5a6189024920bc9ffe573015e26d176c4ab27663f",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-f4bcf19b8bd5",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/track-aml-ctf-developments/SKILL.md",
+    "sha256": "db7e82be549ecdee737cc15e0ac7c4010162732107f908f8b249ae1d4d4de3a2",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-ff8de1cad96e",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/track-contract-renewals/SKILL.md",
+    "sha256": "670c48194345e0868dec3d4318f3e6e529cc8f6015141990afbb7b9297527b77",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-912ecf16defb",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/track-fair-work-developments/SKILL.md",
+    "sha256": "21dd4533304a357bb5c6f570f482c2454ce2e187f20f48d39050b198c57d247a",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-e0e80b969ae2",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/triage-government-ai-use-case/SKILL.md",
+    "sha256": "a154644d057b412f562990041c5bfc60e8fa624967a50911364cd23adc2ba359",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-428ad4e693cc",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/triage-inbound-nda/SKILL.md",
+    "sha256": "476fc9f8ebf13aec5979f2f4400dccf5a1201cf615a2192e4e715c43c5d558ad",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-c294c739f2a0",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/triage-legal-enquiry/SKILL.md",
+    "sha256": "405b24491d0f298ec48e316080953918479108704c587a5a0704ce7f11ae2a20",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-0b01fd92cbb9",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/verify-case-quote/SKILL.md",
+    "sha256": "3155079d5bf955455cfa7132d582dadc33f8c100afecf48ed03c5ce37eb50861",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-3366bb655563",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/verify-deadline-basis/SKILL.md",
+    "sha256": "aa7900e3c07c9b2ed38e4eb503a285a9f0975e941bc282c659904c6e6b73866b",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-0bc975a49575",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/verify-federal-judgment/SKILL.md",
+    "sha256": "378b1963f5190e9a1dda39704dfe13f0d50b7c967dff23b6c3740bfe364bffd0",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-3b972c21dc99",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/verify-hca-judgment/SKILL.md",
+    "sha256": "403f7667303217071e7523d5b8573f84099de1081e58c22af4b678d6f34b235d",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-0cb6d68a0531",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/skills/verify-nsw-judgment/SKILL.md",
+    "sha256": "ab990306201ca895af0cafbd44eedcc126b586d2c5a064d09dd156cd414e4e43",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "l0cka-plugin-legal-skills",
+    "source": "l0cka",
+    "path": "plugins/legal-skills/.claude-plugin/plugin.json",
+    "sha256": "606ce86e5a71ebb54f3d24713c38df137d2d2507154fc9e4c4e89165d41c3e6f",
+    "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4971ec06404a",
+    "source": "thu",
+    "path": "skills/Legal-Abductive-Reasoning/SKILL.md",
+    "sha256": "154d8db87186811df7ca4027c97366194a3eeac0595007c35572cc0defa5da13",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-113dbe89cba2",
+    "source": "thu",
+    "path": "skills/Normative-Meaning-Argumentation/SKILL.md",
+    "sha256": "1eee3cb63c30139eb0c4c40d0fd5664d31791c5d8c2bb6faff6cd7343963338c",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-91a07f385fc0",
+    "source": "thu",
+    "path": "skills/administrative-value-judgment/SKILL.md",
+    "sha256": "ed78650c319fc22ecedb2065fc45d3854cea4ca00fa55dee2a7015d7c3975403",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4f6e557b5377",
+    "source": "thu",
+    "path": "skills/analogical-reasoning/SKILL.md",
+    "sha256": "47ad20e576a6b30f83837cfe3da08139206d0188ccbdfb79564e24317f54b988",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-b7e7840e577a",
+    "source": "thu",
+    "path": "skills/argument-chain-construction/SKILL.md",
+    "sha256": "d571af17aa6cb6e27613c7ae71a6469fde8e5ac3819b38b91bb2dc65983c925e",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-1b32bae81b92",
+    "source": "thu",
+    "path": "skills/argument-strength-evaluation/SKILL.md",
+    "sha256": "115d441dd28fd0fe8cda40eb67642253b1ee1abd224fedcc4651f58ef680b5d1",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-a8b49103d362",
+    "source": "thu",
+    "path": "skills/billing-and-litigation-budget/SKILL.md",
+    "sha256": "9e23b7ea4ec5395a812beedafb826ae0d4ed131f5ee94d7cad4441fe63ef7075",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-0e9a9c4437e6",
+    "source": "thu",
+    "path": "skills/case-lifecycle-planning/SKILL.md",
+    "sha256": "c161b5d58d0442b4fe191b611b319a7cbcd099bfde70a95dba8af35a97be58b9",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-67c47d8d2131",
+    "source": "thu",
+    "path": "skills/case-retrieval/SKILL.md",
+    "sha256": "2321f0e1a6f81725a72194bdccc1adb40614c068a1dcac7bdf5cdcfae533280d",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4179d4f68342",
+    "source": "thu",
+    "path": "skills/conflict-resolution/SKILL.md",
+    "sha256": "cb2a459149384aa98211e3335acaac529df0705e5ff66c33387525e66c22f0e7",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-f69fa3af2daf",
+    "source": "thu",
+    "path": "skills/counterfactual-reasoning/SKILL.md",
+    "sha256": "79b7dfa4f06932ade5ba67614c40282f384ce924aece4085e71a3388de330b48",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4c6ca9c18950",
+    "source": "thu",
+    "path": "skills/deductive-reasoning/SKILL.md",
+    "sha256": "f009d4e63b6474d93ca9d3e6214d66620c0aa3fe07e79c54ef3ef5dac99f4d94",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-52e678fc9ecc",
+    "source": "thu",
+    "path": "skills/dispute-and-performance-risk/SKILL.md",
+    "sha256": "c76bd76b542733d0fc04b01ba4ad4cc960bff4b7919c26d73e3d7a61448eda8c",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-37d461156719",
+    "source": "thu",
+    "path": "skills/dispute-issue-identification/SKILL.md",
+    "sha256": "68bc0ef967aba47c09fa30624f01ecc6cffce26eda74cf16910d613936364018",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-23eec77fe094",
+    "source": "thu",
+    "path": "skills/evidence-argument-chain/SKILL.md",
+    "sha256": "3f9de15f3908e1af5b589f2748d3986a459a060ec89fe4999856788ac10b6f5f",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-5b034969afb1",
+    "source": "thu",
+    "path": "skills/evidence-evaluation/SKILL.md",
+    "sha256": "aa70efce1c80fa9c7ddef86a07a0767d0b9b1a72a1c80784ac4a057062910fa4",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-9816489eb8d1",
+    "source": "thu",
+    "path": "skills/formal-legal-consequence/SKILL.md",
+    "sha256": "e9c430d77e7ea00c2819bce6d0411770c097150e60c1b7b237858cd51ef33c49",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-5de23d6316fa",
+    "source": "thu",
+    "path": "skills/inductive-reasoning/SKILL.md",
+    "sha256": "cf041f6dd853c1219508d3bf2359c48f370bc6ac944114745c208c2814e1fd14",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4e6fd4b4c149",
+    "source": "thu",
+    "path": "skills/internal-compliance-risk-identification/SKILL.md",
+    "sha256": "f655cefcfd2f5fcd98e8dc0f9f6b49e70943be3d9e80c0a58a2526b49e59e7d3",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-d2e07f15e333",
+    "source": "thu",
+    "path": "skills/judgment-document-generation/SKILL.md",
+    "sha256": "dde45fee8433b0292a5ac741f269e84ca43d2ad1ff7d987374b60e7b14ff6221",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-e784aca9e4e3",
+    "source": "thu",
+    "path": "skills/judicial-value-judgment/SKILL.md",
+    "sha256": "4d263d52e9e446d5947e888a18ff2114a5d3a7936de8d8b48a82ca4d48ca8f69",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-ef319fb88389",
+    "source": "thu",
+    "path": "skills/legal-article-retrieval/SKILL.md",
+    "sha256": "bb0168c143d9119510d9d76cc38e179783df47337bd3d604a631268921c1b4b4",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4af51682caef",
+    "source": "thu",
+    "path": "skills/legal-concept-comprehension/SKILL.md",
+    "sha256": "e7dd02c5bcf41aca9863b720faba68e572e52b7f3e0086403edbc2e1aaf3e37b",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-4b810714ff59",
+    "source": "thu",
+    "path": "skills/legal-document-formatting/SKILL.md",
+    "sha256": "cad43f88aeddaaabd1c329556035372f8e853d41424023504f391830a38655a7",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-e4b74c3dd725",
+    "source": "thu",
+    "path": "skills/legal-document-summarization/SKILL.md",
+    "sha256": "0da510a1a31683c84eab4421ca3777b30d131bbd3cec68752036c677ce198a42",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-ab41b0b2a558",
+    "source": "thu",
+    "path": "skills/legal-element-extraction/SKILL.md",
+    "sha256": "4f0875d0b5033dd04acfdca11a72016edb60fa05459997a9a09f13bfbd21218b",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-74c7833024e5",
+    "source": "thu",
+    "path": "skills/legal-interpretation-argument/SKILL.md",
+    "sha256": "0c1947d3487ab71ade02e402e154f952f8cfc12e9af1d68bd298ed21675a8085",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-6f2eff729492",
+    "source": "thu",
+    "path": "skills/legal-judgment-prediction/SKILL.md",
+    "sha256": "c30854277815ead2f68bea920520ec7a8d75903b1da147ba498b8d088db005af",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-fd924d3445d0",
+    "source": "thu",
+    "path": "skills/legal-norm-validity-check/SKILL.md",
+    "sha256": "5f90ab0dbf344937e023812bd07c354a39294dabae1816886b2a6f0596a0b06f",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-26a1eebe950e",
+    "source": "thu",
+    "path": "skills/legal-risk-assessment/SKILL.md",
+    "sha256": "aadafac3e48699d65c31d600dfd1ccd969f00cd557dddb0e92128fef2b0ad6c4",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-9228507e057e",
+    "source": "thu",
+    "path": "skills/legal-terminology/SKILL.md",
+    "sha256": "59f70957203c6186ce2d1246102a14606fd159263179f31e7ae450981d7f2d1d",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-12e99a774355",
+    "source": "thu",
+    "path": "skills/multi-document-summarization/SKILL.md",
+    "sha256": "a9bd996f272bcbe48c37a8dfb33709792097869b1b9e8f8fbeca7e53e3279674",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-344fdc3c54b8",
+    "source": "thu",
+    "path": "skills/other-legal-retrieval/SKILL.md",
+    "sha256": "a08b188674ba154aade15de5d2eb113c1787654929781737a0c6e0f546e1af02",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-ecfaa903123e",
+    "source": "thu",
+    "path": "skills/strategic-risk-prioritization/SKILL.md",
+    "sha256": "e63780ef2501512fa6cd1530e916d0f21e8e8b209e1e8098bc3b96ce7bec5e2a",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-346d727e1c62",
+    "source": "thu",
+    "path": "skills/structured-element-extraction/SKILL.md",
+    "sha256": "3a9ad44a141b4301074056e4c947e7d06bdd0e34f84f69afff04289712bcc241",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-eab2312c89be",
+    "source": "thu",
+    "path": "skills/systematic-interpretation/SKILL.md",
+    "sha256": "ae048bf0b52bf834dda1102a80f61f11dc1f2e9f603872820da4531e502ef7b4",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-3c944feaaa94",
+    "source": "thu",
+    "path": "skills/teleological-interpretation/SKILL.md",
+    "sha256": "06c2612c98e82c179fd30cc8decf9446f18a438bd734a42fd045073f1daa1392",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  },
+  {
+    "id": "thu-fc27a87137c9",
+    "source": "thu",
+    "path": "skills/trial-scheduling-and-deadline-monitoring/SKILL.md",
+    "sha256": "6ccc31ed8d232d7419c6db47cc1cec424a3844c2f59655447495308d1b3bc1f8",
+    "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+    "checked": "2026-11-02"
+  }
+]

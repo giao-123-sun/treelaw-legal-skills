@@ -1,0 +1,117 @@
+[
+  {
+    "id": "panrui",
+    "name": "潘睿 · 中国法律工作流",
+    "group": "China",
+    "publisher": "专业律师",
+    "author": "潘睿",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "合规"
+    ],
+    "summary": "串联法律材料、合同红线、劳动争议和 Word 交付的工作流。",
+    "url": "https://github.com/pa1nrui1/legal-skills",
+    "evidence": "https://github.com/pa1nrui1/legal-skills",
+    "identity": "作者自述为广东广和（长春）律师；本目录尚未独立核对执业身份。",
+    "published": null,
+    "updated": "2026-07-03",
+    "license": "MIT",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [
+      "法条",
+      "司法解释",
+      "案例"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "按子技能配置文书处理与检索工具",
+    "keywords": "合同审查 红线 修订 Word 要素式起诉状 争议焦点 类案检索 劳动仲裁",
+    "access": "仓库快照",
+    "created": "2026-06-16",
+    "mirror": "China/panrui"
+  },
+  {
+    "id": "legal-skills-chinese",
+    "name": "Legal-Skills-Chinese",
+    "group": "China",
+    "publisher": "个人",
+    "author": "THUYRan",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉"
+    ],
+    "summary": "法律检索、事实要素、争点识别、解释与论证的分步技能集合。",
+    "url": "https://github.com/THUYRan/Legal-Skills-Chinese",
+    "evidence": "https://github.com/THUYRan/Legal-Skills-Chinese",
+    "identity": "项目称由法律专业人员编写；首页未提供可逐项核对的作者名单。",
+    "published": null,
+    "updated": "2026-08-22",
+    "license": "CC BY-NC-ND 4.0",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [
+      "中国社会主义法律体系"
+    ],
+    "materials": [
+      "法条",
+      "司法解释",
+      "案例"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "jurisdictions": [
+      "中国大陆"
+    ],
+    "dependencies": "见原始使用说明",
+    "keywords": "类案检索 争议焦点 法律解释 证据 裁判",
+    "access": "原站阅读",
+    "created": "2026-05-20"
+  },
+  {
+    "id": "anthropic-legal",
+    "name": "Claude for Legal · 官方插件集",
+    "group": "US",
+    "publisher": "厂商",
+    "author": "Anthropic",
+    "kind": "Skill",
+    "tasks": [
+      "诉讼",
+      "非诉",
+      "涉外",
+      "合规"
+    ],
+    "summary": "商业合同、公司、隐私、劳动与诉讼等插件；按具体技能与机构规则配置。",
+    "url": "https://github.com/anthropics/claude-for-legal",
+    "evidence": "https://claude.com/blog/claude-for-the-legal-industry",
+    "identity": "模型厂商官方发布；未见每项技能具名律师审阅名单。",
+    "published": "2026-05-12",
+    "updated": "2026-10-29",
+    "license": "Apache-2.0",
+    "checked": "2026-11-02",
+    "tested": false,
+    "systems": [],
+    "materials": [],
+    "languages": [
+      "English"
+    ],
+    "jurisdictions": [
+      "美国法律工作及跨法域任务；逐技能配置"
+    ],
+    "dependencies": "Claude插件环境、机构playbook；第三方数据库账户单独配置",
+    "keywords": "NDA contract review MSA employment due diligence privacy litigation",
+    "access": "仓库快照",
+    "mirror": "US/anthropic-legal"
+  }
+]

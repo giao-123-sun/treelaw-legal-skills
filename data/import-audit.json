@@ -1,0 +1,342 @@
+{
+  "date": "2026-11-02",
+  "total": 300,
+  "skills": 287,
+  "plugins": 13,
+  "groups": {
+    "China": 93,
+    "Others": 149,
+    "US": 58
+  },
+  "sources": {
+    "panrui": {
+      "repo": "pa1nrui1/legal-skills",
+      "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+      "skills": 54,
+      "scanned": 59,
+      "plugins": 1
+    },
+    "anthropic": {
+      "repo": "anthropics/claude-for-legal",
+      "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+      "skills": 107,
+      "scanned": 151,
+      "plugins": 11
+    },
+    "l0cka": {
+      "repo": "l0cka/legal-skills",
+      "commit": "f61cb01535dc389ae6a4374c7485667d993089b5",
+      "skills": 88,
+      "scanned": 98,
+      "plugins": 1
+    },
+    "thu": {
+      "repo": "THUYRan/Legal-Skills-Chinese",
+      "commit": "c31ef1f022be6bcb3e31c1a2374d1d8240ffa61f",
+      "skills": 38,
+      "scanned": 38,
+      "plugins": 0
+    }
+  },
+  "excluded": [
+    {
+      "source": "panrui",
+      "path": "SKILL.md",
+      "reason": "总入口、调度或通用编辑辅助项"
+    },
+    {
+      "source": "panrui",
+      "path": "skills/legal/刑事辩护总调度/SKILL.md",
+      "reason": "总入口、调度或通用编辑辅助项"
+    },
+    {
+      "source": "panrui",
+      "path": "skills/legal/微信文章转换为markdown/SKILL.md",
+      "reason": "总入口、调度或通用编辑辅助项"
+    },
+    {
+      "source": "panrui",
+      "path": "skills/legal/法律工作总控/SKILL.md",
+      "reason": "总入口、调度或通用编辑辅助项"
+    },
+    {
+      "source": "panrui",
+      "path": "skills/legal/法律文章quai味道/SKILL.md",
+      "reason": "总入口、调度或通用编辑辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "ai-governance-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "ai-governance-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "ai-governance-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "commercial-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "commercial-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "commercial-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "corporate-legal/skills/ai-tool-handoff/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "corporate-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "corporate-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "corporate-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "employment-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "employment-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "employment-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "external_plugins/cocounsel-legal/skills/deep-research/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "ip-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "ip-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "ip-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "law-student/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "law-student/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "law-student/skills/session/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/auto-updater/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/cold-start-interview/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/customize/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/disable/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/registry-browser/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/related-skills-surfacer/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/skill-installer/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/skill-manager/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/skills-qa/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-builder-hub/skills/uninstall/SKILL.md",
+      "reason": "技能管理工具或外部供应商插件，不计入本次法律任务条目"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-clinic/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "legal-clinic/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "litigation-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "litigation-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "litigation-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "privacy-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "privacy-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "privacy-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "product-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "product-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "product-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "regulatory-legal/skills/cold-start-interview/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "regulatory-legal/skills/customize/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "anthropic",
+      "path": "regulatory-legal/skills/matter-workspace/SKILL.md",
+      "reason": "初始化、配置、工作区或宿主交接辅助项"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/compute-underpayment-exposure-framework/SKILL.md",
+      "reason": "上游frontmatter格式未通过解析，暂不收录",
+      "detail": "mapping values are not allowed here\n  in \"<unicode string>\", line 3, column 201:\n     ... ffence screening. Framework only: never invent award rates, comp ... \n                                         ^"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-ai-governance-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-aml-ctf-practice-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-consumer-competition-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-corporations-governance/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-drafting-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-employment-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-legal-triage/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-litigation-deadline-profile/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    },
+    {
+      "source": "l0cka",
+      "path": "plugins/legal-skills/skills/configure-review-playbook/SKILL.md",
+      "reason": "机构规则初始化；保留在完整插件包内"
+    }
+  ],
+  "translationCopiesExcluded": 38,
+  "referenceItems": 15,
+  "method": "原始文件为单位；按文件哈希去重；同一插件的宿主入口合并；参考资料不计入技能数量"
+}
