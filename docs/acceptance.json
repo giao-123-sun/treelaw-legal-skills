@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-02",
+  "browser": {
+    "date": "2026-11-02",
+    "base": "https://giao-123-sun.github.io/treelaw-legal-skills",
+    "status": "passed",
+    "checks": [
+      "24 resources rendered",
+      "NDA keyword search",
+      "combined filters / empty state",
+      "reset",
+      "judicial interpretation material filter",
+      "URL state restoration",
+      "three archives and six shared subskills",
+      "query handled as text",
+      "US English page",
+      "publisher groups deduplicate subskills",
+      "resource provenance and license",
+      "mobile viewport no overflow",
+      "mobile filters",
+      "no-JavaScript crawlable content",
+      "no browser runtime errors"
+    ]
+  },
+  "downloads": [
+    {
+      "repo": "pa1nrui1/legal-skills",
+      "status": 200,
+      "bytes": 1954283,
+      "sha256_matches": true
+    },
+    {
+      "repo": "SenryLee/legal-prompts",
+      "status": 200,
+      "bytes": 744396,
+      "sha256_matches": true
+    },
+    {
+      "repo": "anthropics/claude-for-legal",
+      "status": 200,
+      "bytes": 1395242,
+      "sha256_matches": true
+    }
+  ],
+  "deployment": "https://github.com/giao-123-sun/treelaw-legal-skills/actions/runs/41330656105",
+  "search": {
+    "queries": [
+      "\"giao-123-sun.github.io/treelaw-legal-skills\"",
+      "\"github.com/giao-123-sun/treelaw-legal-skills\""
+    ],
+    "result": "No exact results returned",
+    "ai_answer_sampling": "not_run"
+  }
+}
