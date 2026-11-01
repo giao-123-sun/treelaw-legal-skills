@@ -34,9 +34,62 @@
     ]
   },
   "public_browser": {
-    "status": "pending_current_deployment"
+    "date": "2026-11-02",
+    "base": "https://giao-123-sun.github.io/treelaw-legal-skills",
+    "status": "passed",
+    "checks": [
+      "300 entries / first 24 rendered",
+      "pagination and reload state",
+      "individual skills / plugins toggle",
+      "four source filters",
+      "NDA keyword search",
+      "combined filters / empty state",
+      "reset",
+      "Chinese task search",
+      "material filter / URL restoration",
+      "262 entries with licensed full archives",
+      "query handled as text",
+      "58 US entries / English page",
+      "publisher groups / one row per source",
+      "15 references separate from skill counts",
+      "skill provenance / pinned file / license",
+      "plugin members directly linked",
+      "mobile viewport no overflow",
+      "mobile filters",
+      "300 static entries crawlable without JavaScript",
+      "no browser runtime errors"
+    ]
   },
-  "public_downloads": {
-    "status": "pending_current_deployment"
-  }
+  "public_downloads": [
+    {
+      "repo": "pa1nrui1/legal-skills",
+      "url": "https://raw.githubusercontent.com/giao-123-sun/treelaw-legal-skills/5bd21476c2440084a57c5b4a2478cf8cb7fb6560/China/panrui/upstream.zip",
+      "status": 200,
+      "bytes": 1954283,
+      "sha256_matches": true
+    },
+    {
+      "repo": "SenryLee/legal-prompts",
+      "url": "https://raw.githubusercontent.com/giao-123-sun/treelaw-legal-skills/5bd21476c2440084a57c5b4a2478cf8cb7fb6560/China/senry-prompts/upstream.zip",
+      "status": 200,
+      "bytes": 744396,
+      "sha256_matches": true
+    },
+    {
+      "repo": "anthropics/claude-for-legal",
+      "url": "https://raw.githubusercontent.com/giao-123-sun/treelaw-legal-skills/5bd21476c2440084a57c5b4a2478cf8cb7fb6560/US/anthropic-legal/upstream.zip",
+      "status": 200,
+      "bytes": 1395242,
+      "sha256_matches": true
+    },
+    {
+      "repo": "l0cka/legal-skills",
+      "url": "https://raw.githubusercontent.com/giao-123-sun/treelaw-legal-skills/5bd21476c2440084a57c5b4a2478cf8cb7fb6560/Others/l0cka-legal/upstream.zip",
+      "status": 200,
+      "bytes": 2108207,
+      "sha256_matches": true
+    }
+  ],
+  "deployment": "https://github.com/giao-123-sun/treelaw-legal-skills/actions/runs/41334236976",
+  "tested_commit": "5bd21476c2440084a57c5b4a2478cf8cb7fb6560"
 }
