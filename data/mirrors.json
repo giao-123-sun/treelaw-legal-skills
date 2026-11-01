@@ -1,0 +1,35 @@
+[
+  {
+    "path": "China/panrui",
+    "repo": "pa1nrui1/legal-skills",
+    "commit": "5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "license": "MIT",
+    "download": "https://codeload.github.com/pa1nrui1/legal-skills/zip/5e39b9c30cc66ece89ff64cdafbeddde80c6b507",
+    "checked": "2026-11-02",
+    "sha256": "116b074e94fb98342008145cace381c56cd5e135e8e22f6cdc83d57b915d99e1",
+    "bytes": 1954283,
+    "files": 545
+  },
+  {
+    "path": "China/senry-prompts",
+    "repo": "SenryLee/legal-prompts",
+    "commit": "79f87ad95498ab5d56ba8022251f795546399868",
+    "license": "MIT",
+    "download": "https://codeload.github.com/SenryLee/legal-prompts/zip/79f87ad95498ab5d56ba8022251f795546399868",
+    "checked": "2026-11-02",
+    "sha256": "5af1c9ad264cc6afa11732c09e014401b74b456746d33610a7d119ddc435329b",
+    "bytes": 744396,
+    "files": 254
+  },
+  {
+    "path": "US/anthropic-legal",
+    "repo": "anthropics/claude-for-legal",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "license": "Apache-2.0",
+    "download": "https://codeload.github.com/anthropics/claude-for-legal/zip/4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "checked": "2026-11-02",
+    "sha256": "891f16b9bcc9b53fcb3ea54c660ea06ea8d0fab9400ac6e46f319006f34ab73d",
+    "bytes": 1395242,
+    "files": 315
+  }
+]

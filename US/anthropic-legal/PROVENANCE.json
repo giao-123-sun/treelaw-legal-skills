@@ -1,0 +1,11 @@
+{
+  "path": "US/anthropic-legal",
+  "repo": "anthropics/claude-for-legal",
+  "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+  "license": "Apache-2.0",
+  "download": "https://codeload.github.com/anthropics/claude-for-legal/zip/4a6c651889c97cc9140580363c73e0eb17379c2b",
+  "checked": "2026-11-02",
+  "sha256": "891f16b9bcc9b53fcb3ea54c660ea06ea8d0fab9400ac6e46f319006f34ab73d",
+  "bytes": 1395242,
+  "files": 315
+}
